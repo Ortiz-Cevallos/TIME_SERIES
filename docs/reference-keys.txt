@@ -1,0 +1,13 @@
+tab:unnamed-chunk-26
+qué-es-una-de-serie-de-tiempo
+serie-ruido-blanco-wn
+serie-random-walk-rw
+proceso-arma
+simulación-de-procesos
+estimación-de-un-proceso-arima
+pronósticos
+modelos-introductorios
+modelos-para-hacer-pronósticos-del-pib-de-honduras
+simulación-de-shock-en-el-pib-de-usa
+ejercicio-fuera-de-muestra-ipc-de-honduras
+ipc-de-honduras

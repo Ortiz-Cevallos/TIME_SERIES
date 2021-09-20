@@ -1,0 +1,875 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={INTRODUCCIÓN A SERIES DE TIEMPO},
+  pdfauthor={LUIS ORTIZ-CEVALLOS},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{INTRODUCCIÓN A SERIES DE TIEMPO}
+\author{LUIS ORTIZ-CEVALLOS}
+\date{2021-09-20}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{quuxe9-es-una-de-serie-de-tiempo}{%
+\chapter{¿Qué es una de serie de tiempo?}\label{quuxe9-es-una-de-serie-de-tiempo}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(}\StringTok{"readr"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"xts"}\NormalTok{) }
+\FunctionTok{library}\NormalTok{(}\StringTok{"zoo"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"astsa"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"forecast"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"ggplot2"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"forecast"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"ggfortify"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"stargazer"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"urca"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"dynlm"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"scales"}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(}\StringTok{"quantmod"}\NormalTok{)}
+\NormalTok{TRIM}\OtherTok{\textless{}{-}}\FunctionTok{as.xts}\NormalTok{(}\FunctionTok{read.zoo}\NormalTok{(}\StringTok{"FINAL\_HN.csv"}\NormalTok{, }\AttributeTok{index.column =} \DecValTok{1}\NormalTok{, }\AttributeTok{sep =} \StringTok{";"}\NormalTok{, }\AttributeTok{header=}\ConstantTok{TRUE}\NormalTok{, }\AttributeTok{format =} \StringTok{"\%d/\%m/\%Y"}\NormalTok{))}
+\NormalTok{MES}\OtherTok{\textless{}{-}}\FunctionTok{as.xts}\NormalTok{(}\FunctionTok{read.zoo}\NormalTok{(}\StringTok{"MES\_HN.csv"}\NormalTok{, }\AttributeTok{index.column =} \DecValTok{1}\NormalTok{, }\AttributeTok{sep =} \StringTok{";"}\NormalTok{, }\AttributeTok{header=}\ConstantTok{TRUE}\NormalTok{, }\AttributeTok{format =} \StringTok{"\%d/\%m/\%Y"}\NormalTok{))}
+\NormalTok{IMAE}\OtherTok{\textless{}{-}}\NormalTok{MES}\SpecialCharTok{$}\NormalTok{IMAE}
+\NormalTok{P}\OtherTok{\textless{}{-}}\NormalTok{ggplot2}\SpecialCharTok{::}\FunctionTok{autoplot}\NormalTok{(}\FunctionTok{log}\NormalTok{(IMAE))}\SpecialCharTok{+}\FunctionTok{xlab}\NormalTok{(}\StringTok{"Year"}\NormalTok{)}\SpecialCharTok{+}
+\FunctionTok{ggtitle}\NormalTok{(}\StringTok{"LOGARITMO DEL IMAE EN HONDURAS"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{P}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\hypertarget{serie-ruido-blanco-wn}{%
+\section{Serie Ruido Blanco (WN)}\label{serie-ruido-blanco-wn}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X\_WN}\OtherTok{\textless{}{-}}\FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{)), }\AttributeTok{n=}\DecValTok{1000}\NormalTok{, }\AttributeTok{mean=}\DecValTok{4}\NormalTok{, }\AttributeTok{sd=}\DecValTok{2}\NormalTok{)}
+\FunctionTok{autoplot}\NormalTok{(X\_WN)}\SpecialCharTok{+}
+\FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Serie Ruido Blanco"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\hypertarget{serie-random-walk-rw}{%
+\section{Serie Random Walk (RW)}\label{serie-random-walk-rw}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X\_RW}\OtherTok{\textless{}{-}}\FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{)}
+\FunctionTok{autoplot}\NormalTok{(X\_RW)}\SpecialCharTok{+}
+\FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Serie Random Walk"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{white\_noise }\OtherTok{\textless{}{-}} \FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{)}
+\NormalTok{random\_walk }\OtherTok{\textless{}{-}} \FunctionTok{cumsum}\NormalTok{(white\_noise)}
+\NormalTok{wn\_drift }\OtherTok{\textless{}{-}} \FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{, }\AttributeTok{mean=}\FloatTok{0.4}\NormalTok{)}
+\NormalTok{rw\_drift }\OtherTok{\textless{}{-}} \FunctionTok{cumsum}\NormalTok{(wn\_drift)}
+\FunctionTok{plot.ts}\NormalTok{(}\FunctionTok{cbind}\NormalTok{(white\_noise, random\_walk, wn\_drift, rw\_drift))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\hypertarget{proceso-arma}{%
+\section{Proceso ARMA}\label{proceso-arma}}
+
+Simulando un proceso AR(1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X\_AR1}\OtherTok{\textless{}{-}}\FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{), }\AttributeTok{ar=}\FunctionTok{c}\NormalTok{(}\FloatTok{0.90}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{)}
+\FunctionTok{autoplot}\NormalTok{(X\_AR1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-6-1.pdf}
+Simulando un proceso AR(2)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X\_MA1}\OtherTok{\textless{}{-}}\FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{), }\AttributeTok{ma=}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\FloatTok{0.98}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{)}\SpecialCharTok{+}\DecValTok{50}
+\FunctionTok{autoplot}\NormalTok{(X\_MA1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+Correlación entre el nivel del PIB de Honduras y el de USA
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{USA}\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB\_USA[}\StringTok{"2001{-}01{-}01/"}\NormalTok{]))}
+\NormalTok{HN}\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB[}\StringTok{"2001{-}01{-}01/"}\NormalTok{]))}
+\FunctionTok{cor}\NormalTok{(USA,HN)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##               PIB
+## PIB_USA 0.9775886
+\end{verbatim}
+
+Scatter plot
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(}\FunctionTok{cbind}\NormalTok{(USA, HN))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+Correlación entre el la tasa de crecimiento del PIB de Honduras y el de USA
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{USA}\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(}\FunctionTok{diff}\NormalTok{(USA, }\AttributeTok{lag=}\DecValTok{4}\NormalTok{))}
+\NormalTok{HN}\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(}\FunctionTok{diff}\NormalTok{(HN, }\AttributeTok{lag=}\DecValTok{4}\NormalTok{))}
+\FunctionTok{cor}\NormalTok{(USA,HN)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##               PIB
+## PIB_USA 0.5405966
+\end{verbatim}
+
+Scatter plot
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(USA, HN)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+Función de autocorrelación del PIB de Honduras
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{PIB}\OtherTok{\textless{}{-}}\FunctionTok{as.ts}\NormalTok{(HN)}
+\FunctionTok{acf}\NormalTok{(PIB, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+Función de autocorrelación parcial del PIB de Honduras
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{PIB}\OtherTok{\textless{}{-}}\FunctionTok{as.ts}\NormalTok{(HN)}
+\FunctionTok{pacf}\NormalTok{(PIB, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+Función de autocorrelación de un proceso ruído blanco
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{acf}\NormalTok{(X\_WN, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+Función de autocorrelación parcial de un proceso ruído blanco
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{pacf}\NormalTok{(X\_WN, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-15-1.pdf}
+
+Función de autocorrelación de un proceso RW
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{acf}\NormalTok{(X\_RW, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-16-1.pdf}
+
+Función de autocorrelación parcial de un proceso RW
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{pacf}\NormalTok{(X\_RW, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+Función de autocorrelación de un proceso AR(1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{acf}\NormalTok{(X\_AR1, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-18-1.pdf}
+
+Función de autocorrelación parcial de un proceso AR(1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{pacf}\NormalTok{(X\_AR1, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-19-1.pdf}
+
+Función de autocorrelación de un proceso MA(1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{acf}\NormalTok{(X\_MA1, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-20-1.pdf}
+
+Función de autocorrelación parcial de un proceso MA(1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{pacf}\NormalTok{(X\_MA1, }\AttributeTok{lag.max =} \DecValTok{24}\NormalTok{, }\AttributeTok{plot=}\ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-21-1.pdf}
+
+\hypertarget{simulaciuxf3n-de-procesos}{%
+\section{Simulación de procesos}\label{simulaciuxf3n-de-procesos}}
+
+\#\#\#Estimación de un procesos SARIMA(1,0,1,1,1,1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model    }\OtherTok{\textless{}{-}} \FunctionTok{Arima}\NormalTok{(}\FunctionTok{ts}\NormalTok{(}\FunctionTok{rnorm}\NormalTok{(}\DecValTok{100}\NormalTok{),}\AttributeTok{freq=}\DecValTok{4}\NormalTok{), }\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{), }\AttributeTok{seasonal=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{),}
+            \AttributeTok{fixed=}\FunctionTok{c}\NormalTok{(}\AttributeTok{phi=}\FloatTok{0.0}\NormalTok{, }\AttributeTok{theta=}\SpecialCharTok{{-}}\FloatTok{0.0}\NormalTok{, }\AttributeTok{Phi=}\FloatTok{0.0}\NormalTok{, }\AttributeTok{Theta=}\SpecialCharTok{{-}}\FloatTok{0.0}\NormalTok{))}
+\NormalTok{X\_SARIMA}\OtherTok{\textless{}{-}} \FunctionTok{simulate}\NormalTok{(model, }\AttributeTok{nsim=}\DecValTok{200}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(X\_SARIMA)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-22-1.pdf}
+
+\hypertarget{estimaciuxf3n-de-un-proceso-arima}{%
+\subsection{Estimación de un proceso ARIMA}\label{estimaciuxf3n-de-un-proceso-arima}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{\textless{}{-}}\FunctionTok{arima.sim}\NormalTok{(}\FunctionTok{list}\NormalTok{(}\AttributeTok{order=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{), }\AttributeTok{ma=}\FunctionTok{c}\NormalTok{(}\FloatTok{1.5}\NormalTok{,}\SpecialCharTok{{-}}\FloatTok{0.75}\NormalTok{)), }\AttributeTok{n=}\DecValTok{100}\NormalTok{)}\SpecialCharTok{+}\DecValTok{50}
+\NormalTok{x\_fit}\OtherTok{\textless{}{-}}\FunctionTok{sarima}\NormalTok{(x, }\AttributeTok{p=}\DecValTok{2}\NormalTok{, }\AttributeTok{d=}\DecValTok{0}\NormalTok{, }\AttributeTok{q=}\DecValTok{0}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-23-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x\_fit}\SpecialCharTok{$}\NormalTok{ttable}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{pronuxf3sticos}{%
+\chapter{Pronósticos}\label{pronuxf3sticos}}
+
+\hypertarget{modelos-introductorios}{%
+\section{Modelos introductorios}\label{modelos-introductorios}}
+
+Pronósticos Naive del IMAE de Honduras vs data observada
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{imae}\OtherTok{\textless{}{-}}\FunctionTok{log}\NormalTok{(MES}\SpecialCharTok{$}\NormalTok{IMAE[}\StringTok{"2001{-}01{-}01/2010{-}12{-}01"}\NormalTok{])}
+\NormalTok{IMAE\_NAIVE}\OtherTok{\textless{}{-}}\FunctionTok{naive}\NormalTok{(imae)}
+\NormalTok{imaef}\OtherTok{\textless{}{-}}\FunctionTok{ts}\NormalTok{(}\FunctionTok{fitted}\NormalTok{(IMAE\_NAIVE), }\AttributeTok{frequency=}\DecValTok{12}\NormalTok{, }\AttributeTok{start=}\FunctionTok{c}\NormalTok{(}\DecValTok{2001}\SpecialCharTok{/}\DecValTok{01}\SpecialCharTok{/}\DecValTok{01}\NormalTok{))}
+\NormalTok{imaef}\OtherTok{\textless{}{-}}\FunctionTok{as.xts}\NormalTok{(imaef)}
+\FunctionTok{autoplot}\NormalTok{(}\FunctionTok{ts}\NormalTok{(}\FunctionTok{cbind}\NormalTok{(imae, imaef), }\AttributeTok{start =} \FunctionTok{c}\NormalTok{(}\DecValTok{2001}\SpecialCharTok{/}\DecValTok{01}\SpecialCharTok{/}\DecValTok{01}\NormalTok{), }\AttributeTok{frequency =} \DecValTok{12}\NormalTok{ ),}
+         \AttributeTok{facets =} \ConstantTok{FALSE}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{xlab}\NormalTok{(}\StringTok{"Years"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-24-1.pdf}
+
+Pronósticos del IMAE de Honduras 24 meses en adelante a partir de un proceso SARIMA(1,1,1)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{imae}\OtherTok{\textless{}{-}}\NormalTok{IMAE[}\StringTok{"2001{-}01{-}01/2010{-}12{-}01"}\NormalTok{]}
+\NormalTok{imaef}\OtherTok{\textless{}{-}}\NormalTok{IMAE[}\StringTok{"/2012{-}12{-}01"}\NormalTok{]}
+\NormalTok{resultado}\OtherTok{\textless{}{-}}\FunctionTok{sarima.for}\NormalTok{(imae, }\AttributeTok{n.ahead=}\DecValTok{24}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-25-1.pdf}
+
+\hypertarget{modelos-para-hacer-pronuxf3sticos-del-pib-de-honduras}{%
+\section{Modelos para hacer pronósticos del PIB de Honduras}\label{modelos-para-hacer-pronuxf3sticos-del-pib-de-honduras}}
+
+Modelo de regresión
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(knitr)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(broom) }
+\FunctionTok{library}\NormalTok{(AER)}
+\NormalTok{TRIM}\OtherTok{\textless{}{-}}\FunctionTok{as.xts}\NormalTok{(}\FunctionTok{read.zoo}\NormalTok{(}\StringTok{"FINAL\_HN\_P.csv"}\NormalTok{, }\AttributeTok{index.column =} \DecValTok{1}\NormalTok{, }\AttributeTok{sep =} \StringTok{";"}\NormalTok{, }\AttributeTok{header=}\ConstantTok{TRUE}\NormalTok{, }\AttributeTok{format =} \StringTok{"\%d/\%m/\%Y"}\NormalTok{))}
+\NormalTok{M.ols }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB) }\SpecialCharTok{\textasciitilde{}} \FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB\_USA))}
+\FunctionTok{kable}\NormalTok{(}\FunctionTok{tidy}\NormalTok{(M.ols), }\AttributeTok{digits=}\DecValTok{4}\NormalTok{, }\AttributeTok{align=}\StringTok{\textquotesingle{}c\textquotesingle{}}\NormalTok{,}\AttributeTok{caption=}\StringTok{"Regresión entre el nivel del PIB de Honduras con respecto al de USA"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-26}Regresión entre el nivel del PIB de Honduras con respecto al de USA}
+\centering
+\begin{tabular}[t]{c|c|c|c|c}
+\hline
+term & estimate & std.error & statistic & p.value\\
+\hline
+(Intercept) & -9.6056 & 0.4685 & -20.5041 & 0\\
+\hline
+log(TRIM\$PIB\_USA) & 2.0873 & 0.0485 & 43.0384 & 0\\
+\hline
+\end{tabular}
+\end{table}
+
+Modelo de regresión para el PIB de Honduras
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{INDEX  }\OtherTok{\textless{}{-}}\FunctionTok{factor}\NormalTok{(}\FunctionTok{index}\NormalTok{(TRIM))}
+\NormalTok{dummies}\OtherTok{\textless{}{-}}\FunctionTok{model.matrix}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{INDEX)}
+\NormalTok{TRIM   }\OtherTok{\textless{}{-}}\FunctionTok{merge}\NormalTok{(TRIM, dummies, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{Y      }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(}\FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB), }\AttributeTok{lag=}\DecValTok{4}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{, }\AttributeTok{start=}\StringTok{"2004{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{Y\_USA  }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(}\FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB\_USA), }\AttributeTok{lag=}\DecValTok{4}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{, }\AttributeTok{start=}\StringTok{"2004{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{DUM\_HN }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(TRIM[, }\FunctionTok{c}\NormalTok{(}\StringTok{"INDEX2005.09.01"}\NormalTok{, }\StringTok{"INDEX2006.12.01"}\NormalTok{, }\StringTok{"INDEX2008.06.01"}\NormalTok{)], }\AttributeTok{start=}\StringTok{"2004{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{i\_HN   }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(}\FunctionTok{diff}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{TASA\_P, }\AttributeTok{lag=}\DecValTok{1}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{, }\AttributeTok{start=}\StringTok{"2004{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{REG\_HN }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(DUM\_HN, Y\_USA, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{REG\_HN }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(REG\_HN, i\_HN,  }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{PIB\_HN }\OtherTok{\textless{}{-}}\FunctionTok{sarima}\NormalTok{(Y, }\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\AttributeTok{P=}\DecValTok{1}\NormalTok{, }\AttributeTok{D=}\DecValTok{0}\NormalTok{, }\AttributeTok{Q=}\DecValTok{0}\NormalTok{, }\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{REG\_HN)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## initial  value 0.542818 
+## iter   2 value 0.399627
+## iter   3 value 0.369226
+## iter   4 value 0.292117
+## iter   5 value 0.266433
+## iter   6 value 0.252289
+## iter   7 value 0.225647
+## iter   8 value 0.225239
+## iter   9 value 0.217205
+## iter  10 value 0.210556
+## iter  11 value 0.209208
+## iter  12 value 0.204386
+## iter  13 value 0.204299
+## iter  14 value 0.204282
+## iter  15 value 0.204281
+## iter  16 value 0.204281
+## iter  17 value 0.204281
+## iter  18 value 0.204281
+## iter  19 value 0.204281
+## iter  19 value 0.204281
+## iter  19 value 0.204281
+## final  value 0.204281 
+## converged
+## initial  value 0.186966 
+## iter   2 value 0.186057
+## iter   3 value 0.185621
+## iter   4 value 0.185490
+## iter   5 value 0.185264
+## iter   6 value 0.185174
+## iter   7 value 0.185124
+## iter   8 value 0.185091
+## iter   9 value 0.185069
+## iter  10 value 0.185068
+## iter  11 value 0.185068
+## iter  12 value 0.185068
+## iter  13 value 0.185068
+## iter  13 value 0.185068
+## iter  13 value 0.185068
+## final  value 0.185068 
+## converged
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-27-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{PIB\_HN}\SpecialCharTok{$}\NormalTok{ttable}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                 Estimate     SE t.value p.value
+## ar1               0.5867 0.1333  4.4015  0.0001
+## ar2               0.2160 0.1364  1.5839  0.1194
+## sar1             -0.3799 0.1277 -2.9750  0.0045
+## intercept         2.4738 0.6710  3.6869  0.0006
+## INDEX2005.09.01   3.3296 0.9658  3.4473  0.0011
+## INDEX2006.12.01   2.0824 1.0148  2.0521  0.0453
+## INDEX2008.06.01   2.2639 1.0536  2.1487  0.0364
+## PIB_USA           0.7381 0.1920  3.8438  0.0003
+## TASA_P            0.0056 0.0028  1.9794  0.0532
+\end{verbatim}
+
+Modelo de regresión para el PIB de USA
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Y\_USA     }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(}\FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(TRIM}\SpecialCharTok{$}\NormalTok{PIB\_USA), }\AttributeTok{lag=}\DecValTok{4}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{, }\AttributeTok{start=}\StringTok{"1990{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{DUM\_USA   }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(TRIM[, }\FunctionTok{c}\NormalTok{(}\StringTok{"INDEX2008.12.01"}\NormalTok{, }\StringTok{"INDEX2009.12.01"}\NormalTok{)], }\AttributeTok{start=}\StringTok{"1990{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2018{-}12{-}01"}\NormalTok{)}
+\NormalTok{PIB\_USA   }\OtherTok{\textless{}{-}}\FunctionTok{sarima}\NormalTok{(Y\_USA, }\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\AttributeTok{P=}\DecValTok{1}\NormalTok{, }\AttributeTok{D=}\DecValTok{0}\NormalTok{, }\AttributeTok{Q=}\DecValTok{0}\NormalTok{, }\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{DUM\_USA )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## initial  value 0.434672 
+## iter   2 value 0.189957
+## iter   3 value 0.021610
+## iter   4 value -0.116248
+## iter   5 value -0.251754
+## iter   6 value -0.332615
+## iter   7 value -0.410324
+## iter   8 value -0.433150
+## iter   9 value -0.436896
+## iter  10 value -0.439417
+## iter  11 value -0.440979
+## iter  12 value -0.441051
+## iter  13 value -0.441096
+## iter  14 value -0.441109
+## iter  15 value -0.441110
+## iter  16 value -0.441110
+## iter  17 value -0.441111
+## iter  18 value -0.441115
+## iter  19 value -0.441117
+## iter  20 value -0.441118
+## iter  21 value -0.441119
+## iter  22 value -0.441119
+## iter  22 value -0.441119
+## iter  22 value -0.441119
+## final  value -0.441119 
+## converged
+\end{verbatim}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-28-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{PIB\_USA}\SpecialCharTok{$}\NormalTok{ttable}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                 Estimate     SE t.value p.value
+## ar1               1.2831 0.0888 14.4513  0.0000
+## ar2              -0.3694 0.0899 -4.1111  0.0001
+## sar1             -0.3721 0.0925 -4.0228  0.0001
+## intercept         2.4027 0.4862  4.9417  0.0000
+## INDEX2008.12.01   0.3768 0.3851  0.9784  0.3301
+## INDEX2009.12.01  -0.1896 0.3823 -0.4958  0.6210
+\end{verbatim}
+
+Pronóstico del PIB de USA
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{DUM\_USA\_N }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(TRIM[, }\FunctionTok{c}\NormalTok{(}\StringTok{"INDEX2008.12.01"}\NormalTok{, }\StringTok{"INDEX2009.12.01"}\NormalTok{)], }\AttributeTok{start=}\StringTok{"2019{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2022{-}12{-}01"}\NormalTok{)}
+\NormalTok{Y\_USA\_N   }\OtherTok{\textless{}{-}}\FunctionTok{sarima.for}\NormalTok{(Y\_USA,}\DecValTok{16}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{DUM\_USA, }\AttributeTok{newxreg=}\NormalTok{DUM\_USA\_N) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-29-1.pdf}
+
+Pronóstico del PIB de Honduras
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dates }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(}\StringTok{"2019{-}03{-}01"}\NormalTok{), }\AttributeTok{length =} \DecValTok{16}\NormalTok{, }\AttributeTok{by =} \StringTok{"quarter"}\NormalTok{)}
+\NormalTok{DUM\_HN\_N }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(TRIM[, }\FunctionTok{c}\NormalTok{(}\StringTok{"INDEX2005.09.01"}\NormalTok{, }\StringTok{"INDEX2006.12.01"}\NormalTok{, }\StringTok{"INDEX2008.06.01"}\NormalTok{)], }\AttributeTok{start=}\StringTok{"2019{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2022{-}12{-}01"}\NormalTok{)}
+\NormalTok{Y\_USA\_N   }\OtherTok{\textless{}{-}} \FunctionTok{xts}\NormalTok{(}\AttributeTok{x=}\NormalTok{Y\_USA\_N}\SpecialCharTok{$}\NormalTok{pred, }\AttributeTok{order.by =}\NormalTok{ dates)}
+\NormalTok{REG\_HN\_N}\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(DUM\_HN\_N, Y\_USA\_N, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{16}\NormalTok{)}
+\NormalTok{i\_HN\_N }\OtherTok{=} \FunctionTok{xts}\NormalTok{(}\AttributeTok{x =}\NormalTok{ data, }\AttributeTok{order.by =}\NormalTok{ dates)}
+\NormalTok{REG\_HN\_N}\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(REG\_HN\_N, i\_HN\_N, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{Y\_N}\OtherTok{\textless{}{-}}\FunctionTok{sarima.for}\NormalTok{(Y,}\DecValTok{16}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{REG\_HN, }\AttributeTok{newxreg=}\NormalTok{REG\_HN\_N) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-30-1.pdf}
+
+\hypertarget{simulaciuxf3n-de-shock-en-el-pib-de-usa}{%
+\section{Simulación de shock en el PIB de USA}\label{simulaciuxf3n-de-shock-en-el-pib-de-usa}}
+
+Simulación
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dates }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(}\StringTok{"2019{-}03{-}01"}\NormalTok{), }\AttributeTok{length =} \DecValTok{16}\NormalTok{, }\AttributeTok{by =} \StringTok{"quarter"}\NormalTok{)}
+\NormalTok{shock }\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{()}
+\NormalTok{shock[}\DecValTok{1}\NormalTok{]}\OtherTok{\textless{}{-}} \DecValTok{0}
+\NormalTok{shock[}\DecValTok{2}\NormalTok{]}\OtherTok{\textless{}{-}} \SpecialCharTok{{-}}\DecValTok{3}\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{/{-}}\FloatTok{0.1896}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{3}\SpecialCharTok{:}\DecValTok{16}\NormalTok{ )\{}
+\NormalTok{  shock[i]}\OtherTok{\textless{}{-}}\FloatTok{0.85}\SpecialCharTok{*}\NormalTok{shock[i}\DecValTok{{-}1}\NormalTok{]}
+\NormalTok{\}}
+\NormalTok{shock\_Y\_USA}\OtherTok{=} \FunctionTok{xts}\NormalTok{(}\AttributeTok{x =}\NormalTok{ shock, }\AttributeTok{order.by =}\NormalTok{ dates) }
+\NormalTok{REG\_SHOCK}\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(TRIM[, }\FunctionTok{c}\NormalTok{(}\StringTok{"INDEX2008.12.01"}\NormalTok{)], }\AttributeTok{start=}\StringTok{"2019{-}03{-}01"}\NormalTok{, }\AttributeTok{end=}\StringTok{"2022{-}12{-}01"}\NormalTok{)}
+\NormalTok{REG\_SHOCK}\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(REG\_SHOCK, shock\_Y\_USA, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{Y\_USA\_SHOCK}\OtherTok{\textless{}{-}}\FunctionTok{sarima.for}\NormalTok{(Y\_USA,}\DecValTok{16}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{DUM\_USA, }\AttributeTok{newxreg=}\NormalTok{REG\_SHOCK) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-31-1.pdf}
+
+Transimisión del shock al PIB de Honduras
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Y\_USA\_S }\OtherTok{\textless{}{-}} \FunctionTok{xts}\NormalTok{(}\AttributeTok{x=}\NormalTok{Y\_USA\_SHOCK}\SpecialCharTok{$}\NormalTok{pred, }\AttributeTok{order.by =}\NormalTok{ dates)}
+\NormalTok{REG\_HN\_S}\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(DUM\_HN\_N, Y\_USA\_S, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{REG\_HN\_S}\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(REG\_HN\_S, i\_HN\_N, }\AttributeTok{join=}\StringTok{"left"}\NormalTok{)}
+\NormalTok{Y\_S}\OtherTok{\textless{}{-}}      \FunctionTok{sarima.for}\NormalTok{(Y,}\DecValTok{16}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{, }\AttributeTok{xreg=}\NormalTok{REG\_HN, }\AttributeTok{newxreg=}\NormalTok{REG\_HN\_S) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-32-1.pdf}
+
+\hypertarget{ejercicio-fuera-de-muestra-ipc-de-honduras}{%
+\chapter{Ejercicio fuera de muestra ipc de Honduras}\label{ejercicio-fuera-de-muestra-ipc-de-honduras}}
+
+\hypertarget{ipc-de-honduras}{%
+\section{Ipc de Honduras}\label{ipc-de-honduras}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{IPC}\OtherTok{\textless{}{-}}\NormalTok{MES}\SpecialCharTok{$}\NormalTok{IPC}
+\NormalTok{FECHA            }\OtherTok{\textless{}{-}}\FunctionTok{index}\NormalTok{(MES)}
+\NormalTok{t\_inicial        }\OtherTok{\textless{}{-}}\FunctionTok{first}\NormalTok{(FECHA,}\StringTok{\textquotesingle{}1 month\textquotesingle{}}\NormalTok{)}
+\NormalTok{index\_final      }\OtherTok{\textless{}{-}} \FunctionTok{last}\NormalTok{(}\FunctionTok{index}\NormalTok{(FECHA))}
+\NormalTok{fecha\_contador   }\OtherTok{\textless{}{-}}\FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(t\_inicial), }\AttributeTok{length =}\NormalTok{index\_final, }\AttributeTok{by =} \StringTok{"months"}\NormalTok{)}
+\NormalTok{counter          }\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{index\_final)  }
+\NormalTok{contador         }\OtherTok{\textless{}{-}}\FunctionTok{xts}\NormalTok{(}\AttributeTok{x=}\NormalTok{counter, }\AttributeTok{order.by =}\NormalTok{ fecha\_contador)}
+\NormalTok{inicio\_estimacion}\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(contador[}\StringTok{"1996{-}01{-}01"}\NormalTok{])[}\DecValTok{1}\NormalTok{]}
+\NormalTok{final\_estimacion }\OtherTok{\textless{}{-}}\FunctionTok{coredata}\NormalTok{(contador[}\StringTok{"2006{-}12{-}01"}\NormalTok{])[}\DecValTok{1}\NormalTok{]}
+\NormalTok{H                }\OtherTok{\textless{}{-}}\DecValTok{3}
+\NormalTok{dates\_F          }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(FECHA[inicio\_estimacion]), }\AttributeTok{length =}\NormalTok{final\_estimacion}\SpecialCharTok{{-}}\NormalTok{inicio\_estimacion}\SpecialCharTok{+}\NormalTok{H, }\AttributeTok{by =} \StringTok{"months"}\NormalTok{)}
+\FunctionTok{assign}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}IPC\_\textquotesingle{}}\NormalTok{, H, }\AttributeTok{sep=}\StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{), }\FunctionTok{xts}\NormalTok{(}\AttributeTok{x=}\FunctionTok{window}\NormalTok{(}\FunctionTok{log}\NormalTok{(MES}\SpecialCharTok{$}\NormalTok{IPC), }\AttributeTok{start=}\NormalTok{FECHA[inicio\_estimacion], }\AttributeTok{end=}\NormalTok{FECHA[final\_estimacion}\SpecialCharTok{+}\NormalTok{H}\DecValTok{{-}1}\NormalTok{]), }\AttributeTok{order.by =}\NormalTok{ dates\_F))}
+
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{)\{}
+\NormalTok{Y                }\OtherTok{\textless{}{-}}\FunctionTok{window}\NormalTok{(}\FunctionTok{log}\NormalTok{(MES}\SpecialCharTok{$}\NormalTok{IPC), }\AttributeTok{start=}\NormalTok{FECHA[inicio\_estimacion], }\AttributeTok{end=}\NormalTok{FECHA[final\_estimacion}\DecValTok{{-}1}\SpecialCharTok{+}\NormalTok{i])}
+\NormalTok{Y\_F              }\OtherTok{\textless{}{-}}\FunctionTok{sarima.for}\NormalTok{(Y,H,}\DecValTok{3}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{11}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{12}\NormalTok{, }\AttributeTok{xreg=}\ConstantTok{NULL}\NormalTok{, }\AttributeTok{newxreg=}\ConstantTok{NULL}\NormalTok{) }
+\NormalTok{dates\_out        }\OtherTok{\textless{}{-}}\FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(FECHA[final\_estimacion}\SpecialCharTok{+}\NormalTok{i]), }\AttributeTok{length =}\NormalTok{H, }\AttributeTok{by =} \StringTok{"months"}\NormalTok{)}
+\NormalTok{Y\_F\_P            }\OtherTok{\textless{}{-}}\FunctionTok{xts}\NormalTok{(}\AttributeTok{x=}\NormalTok{Y\_F}\SpecialCharTok{$}\NormalTok{pred, }\AttributeTok{order.by =}\NormalTok{ dates\_out)}
+\FunctionTok{assign}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}IPC\_\textquotesingle{}}\NormalTok{, H, }\AttributeTok{sep=}\StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{),}\FunctionTok{rbind}\NormalTok{(}\FunctionTok{get}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}IPC\_\textquotesingle{}}\NormalTok{, H, }\AttributeTok{sep=}\StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{)), Y\_F\_P[H]) )}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-1.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-2.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-3.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-4.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-5.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-6.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-7.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-8.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-9.pdf} \includegraphics{bookdown-demo_files/figure-latex/unnamed-chunk-33-10.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{compara          }\OtherTok{\textless{}{-}}\FunctionTok{merge}\NormalTok{(}\FunctionTok{log}\NormalTok{(MES}\SpecialCharTok{$}\NormalTok{IPC),}\FunctionTok{get}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}IPC\_\textquotesingle{}}\NormalTok{, H, }\AttributeTok{sep=}\StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{)),}\AttributeTok{join=}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{,}\AttributeTok{fill=}\DecValTok{0}\NormalTok{) }
+\NormalTok{compara }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                 IPC    IPC.1
+## 1996-01-01 4.015125 4.015125
+## 1996-02-01 4.043140 4.043140
+## 1996-03-01 4.058452 4.058452
+## 1996-04-01 4.078832 4.078832
+## 1996-05-01 4.099510 4.099510
+## 1996-06-01 4.124369 4.124369
+## 1996-07-01 4.146943 4.146943
+## 1996-08-01 4.174600 4.174600
+## 1996-09-01 4.191478 4.191478
+## 1996-10-01 4.206069 4.206069
+## 1996-11-01 4.225648 4.225648
+## 1996-12-01 4.236681 4.236681
+## 1997-01-01 4.256881 4.256881
+## 1997-02-01 4.280811 4.280811
+## 1997-03-01 4.288338 4.288338
+## 1997-04-01 4.294164 4.294164
+## 1997-05-01 4.306671 4.306671
+## 1997-06-01 4.319496 4.319496
+## 1997-07-01 4.333369 4.333369
+## 1997-08-01 4.345675 4.345675
+## 1997-09-01 4.348796 4.348796
+## 1997-10-01 4.346134 4.346134
+## 1997-11-01 4.353825 4.353825
+## 1997-12-01 4.356012 4.356012
+## 1998-01-01 4.364260 4.364260
+## 1998-02-01 4.388778 4.388778
+## 1998-03-01 4.405547 4.405547
+## 1998-04-01 4.422721 4.422721
+## 1998-05-01 4.434569 4.434569
+## 1998-06-01 4.452000 4.452000
+## 1998-07-01 4.471568 4.471568
+## 1998-08-01 4.473026 4.473026
+## 1998-09-01 4.476017 4.476017
+## 1998-10-01 4.481571 4.481571
+## 1998-11-01 4.494095 4.494095
+## 1998-12-01 4.501361 4.501361
+## 1999-01-01 4.518372 4.518372
+## 1999-02-01 4.526923 4.526923
+## 1999-03-01 4.529910 4.529910
+## 1999-04-01 4.533346 4.533346
+## 1999-05-01 4.541166 4.541166
+## 1999-06-01 4.553044 4.553044
+## 1999-07-01 4.560712 4.560712
+## 1999-08-01 4.568910 4.568910
+## 1999-09-01 4.576166 4.576166
+## 1999-10-01 4.585253 4.585253
+## 1999-11-01 4.594759 4.594759
+## 1999-12-01 4.605170 4.605170
+## 2000-01-01 4.610123 4.610123
+## 2000-02-01 4.625116 4.625116
+## 2000-03-01 4.634529 4.634529
+## 2000-04-01 4.647271 4.647271
+## 2000-05-01 4.656813 4.656813
+## 2000-06-01 4.666265 4.666265
+## 2000-07-01 4.672829 4.672829
+## 2000-08-01 4.677491 4.677491
+## 2000-09-01 4.679350 4.679350
+## 2000-10-01 4.684905 4.684905
+## 2000-11-01 4.695925 4.695925
+## 2000-12-01 4.701389 4.701389
+## 2001-01-01 4.710431 4.710431
+## 2001-02-01 4.722953 4.722953
+## 2001-03-01 4.731803 4.731803
+## 2001-04-01 4.737951 4.737951
+## 2001-05-01 4.750136 4.750136
+## 2001-06-01 4.756173 4.756173
+## 2001-07-01 4.761319 4.761319
+## 2001-08-01 4.768139 4.768139
+## 2001-09-01 4.775756 4.775756
+## 2001-10-01 4.777441 4.777441
+## 2001-11-01 4.782479 4.782479
+## 2001-12-01 4.785824 4.785824
+## 2002-01-01 4.789157 4.789157
+## 2002-02-01 4.799914 4.799914
+## 2002-03-01 4.805659 4.805659
+## 2002-04-01 4.812997 4.812997
+## 2002-05-01 4.817859 4.817859
+## 2002-06-01 4.829113 4.829113
+## 2002-07-01 4.837075 4.837075
+## 2002-08-01 4.843399 4.843399
+## 2002-09-01 4.844974 4.844974
+## 2002-10-01 4.850467 4.850467
+## 2002-11-01 4.856707 4.856707
+## 2002-12-01 4.863681 4.863681
+## 2003-01-01 4.872139 4.872139
+## 2003-02-01 4.885072 4.885072
+## 2003-03-01 4.888844 4.888844
+## 2003-04-01 4.894101 4.894101
+## 2003-05-01 4.895598 4.895598
+## 2003-06-01 4.898586 4.898586
+## 2003-07-01 4.902307 4.902307
+## 2003-08-01 4.911183 4.911183
+## 2003-09-01 4.915592 4.915592
+## 2003-10-01 4.919981 4.919981
+## 2003-11-01 4.926529 4.926529
+## 2003-12-01 4.929425 4.929425
+## 2004-01-01 4.938781 4.938781
+## 2004-02-01 4.950177 4.950177
+## 2004-03-01 4.953712 4.953712
+## 2004-04-01 4.964242 4.964242
+## 2004-05-01 4.971894 4.971894
+## 2004-06-01 4.978112 4.978112
+## 2004-07-01 4.991113 4.991113
+## 2004-08-01 4.994506 4.994506
+## 2004-09-01 4.995860 4.995860
+## 2004-10-01 5.004617 5.004617
+## 2004-11-01 5.013298 5.013298
+## 2004-12-01 5.017280 5.017280
+## 2005-01-01 5.025195 5.025195
+## 2005-02-01 5.036953 5.036953
+## 2005-03-01 5.044715 5.044715
+## 2005-04-01 5.053695 5.053695
+## 2005-05-01 5.057519 5.057519
+## 2005-06-01 5.064492 5.064492
+## 2005-07-01 5.073297 5.073297
+## 2005-08-01 5.081404 5.081404
+## 2005-09-01 5.085124 5.085124
+## 2005-10-01 5.085743 5.085743
+## 2005-11-01 5.087596 5.087596
+## 2005-12-01 5.091908 5.091908
+## 2006-01-01 5.095589 5.095589
+## 2006-02-01 5.102565 5.102565
+## 2006-03-01 5.104733 5.104733
+## 2006-04-01 5.110179 5.110179
+## 2006-05-01 5.116795 5.116795
+## 2006-06-01 5.119789 5.119789
+## 2006-07-01 5.125154 5.125154
+## 2006-08-01 5.128715 5.128715
+## 2006-09-01 5.128715 5.128715
+## 2006-10-01 5.129899 5.129899
+## 2006-11-01 5.135210 5.135210
+## 2006-12-01 5.143416 5.143416
+## 2007-01-01 5.149817 5.149817
+## 2007-02-01 5.158945 5.158945
+## 2007-03-01 5.165928 5.169134
+## 2007-04-01 5.171620 5.177588
+## 2007-05-01 5.175585 5.178838
+## 2007-06-01 5.179534 5.187207
+## 2007-07-01 5.186268 5.190610
+## 2007-08-01 5.193512 5.195522
+## 2007-09-01 5.197391 5.193731
+## 2007-10-01 5.209486 5.198121
+## 2007-11-01 5.226821 5.209163
+## 2007-12-01 5.228431 5.220281
+\end{verbatim}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
