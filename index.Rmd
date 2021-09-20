@@ -1,0 +1,305 @@
+--- 
+title: "INTRODUCCIÓN A SERIES DE TIEMPO"
+author: "LUIS ORTIZ-CEVALLOS"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+#  ¿Qué es una de serie de tiempo? 
+
+```{r }
+library("readr")
+library("xts") 
+library("zoo")
+library("astsa")
+library("forecast")
+library("ggplot2")
+library("forecast")
+library("ggfortify")
+library("stargazer")
+library("urca")
+library("dynlm")
+library("scales")
+library("quantmod")
+TRIM<-as.xts(read.zoo("FINAL_HN.csv", index.column = 1, sep = ";", header=TRUE, format = "%d/%m/%Y"))
+MES<-as.xts(read.zoo("MES_HN.csv", index.column = 1, sep = ";", header=TRUE, format = "%d/%m/%Y"))
+IMAE<-MES$IMAE
+P<-ggplot2::autoplot(log(IMAE))+xlab("Year")+
+ggtitle("LOGARITMO DEL IMAE EN HONDURAS")
+
+```
+```{r}
+P
+```
+
+##  Serie Ruido Blanco (WN)
+```{r echo=TRUE}
+X_WN<-arima.sim(list(order=c(0,0,0)), n=1000, mean=4, sd=2)
+autoplot(X_WN)+
+ggtitle("Serie Ruido Blanco")
+```
+
+##  Serie Random Walk (RW)
+```{r echo=TRUE}
+X_RW<-arima.sim(list(order=c(0,1,0)), n=100)
+autoplot(X_RW)+
+ggtitle("Serie Random Walk")
+```
+
+```{r}
+white_noise <- arima.sim(list(order = c(0, 0, 0)), n=100)
+random_walk <- cumsum(white_noise)
+wn_drift <- arima.sim(list(order = c(0, 0, 0)), n=100, mean=0.4)
+rw_drift <- cumsum(wn_drift)
+plot.ts(cbind(white_noise, random_walk, wn_drift, rw_drift))
+```
+
+##  Proceso ARMA
+
+Simulando un proceso AR(1)
+```{r}
+X_AR1<-arima.sim(list(order=c(1,0,0), ar=c(0.90)), n=100)
+autoplot(X_AR1)
+```
+Simulando un proceso AR(2)
+```{r}
+X_MA1<-arima.sim(list(order=c(0,0,1), ma=c(-0.98)), n=100)+50
+autoplot(X_MA1)
+```
+
+Correlación entre el nivel del PIB de Honduras y el de USA
+```{r}
+USA<-coredata(log(TRIM$PIB_USA["2001-01-01/"]))
+HN<-coredata(log(TRIM$PIB["2001-01-01/"]))
+cor(USA,HN)
+
+```
+
+Scatter plot 
+```{r}
+plot(cbind(USA, HN))
+```
+
+Correlación entre el la tasa de crecimiento del PIB de Honduras y el de USA
+```{r}
+USA<-coredata(diff(USA, lag=4))
+HN<-coredata(diff(HN, lag=4))
+cor(USA,HN)
+```
+Scatter plot 
+```{r}
+plot(USA, HN)
+```
+
+Función de autocorrelación del PIB de Honduras
+```{r}
+PIB<-as.ts(HN)
+acf(PIB, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación parcial del PIB de Honduras
+```{r}
+PIB<-as.ts(HN)
+pacf(PIB, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación de un proceso ruído blanco
+```{r}
+acf(X_WN, lag.max = 24, plot=TRUE)
+```
+
+
+Función de autocorrelación parcial de un proceso ruído blanco
+```{r}
+pacf(X_WN, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación de un proceso RW
+```{r}
+acf(X_RW, lag.max = 24, plot=TRUE)
+```
+
+
+Función de autocorrelación parcial de un proceso RW
+```{r}
+pacf(X_RW, lag.max = 24, plot=TRUE)
+```
+
+
+Función de autocorrelación de un proceso AR(1)
+```{r}
+acf(X_AR1, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación parcial de un proceso AR(1)
+```{r}
+pacf(X_AR1, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación de un proceso MA(1)
+```{r}
+acf(X_MA1, lag.max = 24, plot=TRUE)
+```
+
+Función de autocorrelación parcial de un proceso MA(1)
+```{r}
+pacf(X_MA1, lag.max = 24, plot=TRUE)
+```
+
+## Simulación de procesos 
+
+
+###Estimación de un procesos SARIMA(1,0,1,1,1,1)
+```{r}
+model    <- Arima(ts(rnorm(100),freq=4), order=c(1,0,1), seasonal=c(1,1,1),
+            fixed=c(phi=0.0, theta=-0.0, Phi=0.0, Theta=-0.0))
+X_SARIMA<- simulate(model, nsim=200)
+plot(X_SARIMA)
+```
+
+### Estimación de un proceso ARIMA
+```{r echo=TRUE, results='hide'}
+x<-arima.sim(list(order=c(0,0,2), ma=c(1.5,-0.75)), n=100)+50
+x_fit<-sarima(x, p=2, d=0, q=0)
+x_fit$ttable
+```
+
+# Pronósticos 
+
+## Modelos introductorios
+
+Pronósticos Naive del IMAE de Honduras vs data observada
+```{r echo=TRUE, results='hide'}
+imae<-log(MES$IMAE["2001-01-01/2010-12-01"])
+IMAE_NAIVE<-naive(imae)
+imaef<-ts(fitted(IMAE_NAIVE), frequency=12, start=c(2001/01/01))
+imaef<-as.xts(imaef)
+autoplot(ts(cbind(imae, imaef), start = c(2001/01/01), frequency = 12 ),
+         facets = FALSE)+xlab("Years")
+```
+
+Pronósticos del IMAE de Honduras 24 meses en adelante a partir de un proceso SARIMA(1,1,1)
+```{r echo=TRUE, results='hide'}
+imae<-IMAE["2001-01-01/2010-12-01"]
+imaef<-IMAE["/2012-12-01"]
+resultado<-sarima.for(imae, n.ahead=24,1,1,1)
+```
+
+
+##  Modelos para hacer pronósticos del PIB de Honduras 
+
+Modelo de regresión
+
+```{r }
+library(knitr)
+library(dplyr)
+library(broom) 
+library(AER)
+TRIM<-as.xts(read.zoo("FINAL_HN_P.csv", index.column = 1, sep = ";", header=TRUE, format = "%d/%m/%Y"))
+M.ols <- lm(log(TRIM$PIB) ~ log(TRIM$PIB_USA))
+kable(tidy(M.ols), digits=4, align='c',caption="Regresión entre el nivel del PIB de Honduras con respecto al de USA")
+```
+
+Modelo de regresión para el PIB de Honduras
+```{r}
+INDEX  <-factor(index(TRIM))
+dummies<-model.matrix(~INDEX)
+TRIM   <-merge(TRIM, dummies, join="left")
+Y      <-window(diff(log(TRIM$PIB), lag=4)*100, start="2004-03-01", end="2018-12-01")
+Y_USA  <-window(diff(log(TRIM$PIB_USA), lag=4)*100, start="2004-03-01", end="2018-12-01")
+DUM_HN <-window(TRIM[, c("INDEX2005.09.01", "INDEX2006.12.01", "INDEX2008.06.01")], start="2004-03-01", end="2018-12-01")
+i_HN   <-window(diff(TRIM$TASA_P, lag=1)*100, start="2004-03-01", end="2018-12-01")
+REG_HN <- merge(DUM_HN, Y_USA, join="left")
+REG_HN <- merge(REG_HN, i_HN,  join="left")
+PIB_HN <-sarima(Y, 2,0,0,P=1, D=0, Q=0, 4, xreg=REG_HN)
+PIB_HN$ttable
+```
+
+Modelo de regresión para el PIB de USA
+```{r}
+Y_USA     <-window(diff(log(TRIM$PIB_USA), lag=4)*100, start="1990-03-01", end="2018-12-01")
+DUM_USA   <-window(TRIM[, c("INDEX2008.12.01", "INDEX2009.12.01")], start="1990-03-01", end="2018-12-01")
+PIB_USA   <-sarima(Y_USA, 2,0,0,P=1, D=0, Q=0, 4, xreg=DUM_USA )
+PIB_USA$ttable
+```
+
+Pronóstico del PIB de USA
+```{r}
+DUM_USA_N <-window(TRIM[, c("INDEX2008.12.01", "INDEX2009.12.01")], start="2019-03-01", end="2022-12-01")
+Y_USA_N   <-sarima.for(Y_USA,16,2,0,0,1,0,0,4, xreg=DUM_USA, newxreg=DUM_USA_N) 
+```
+
+Pronóstico del PIB de Honduras
+```{r}
+dates <- seq(as.Date("2019-03-01"), length = 16, by = "quarter")
+DUM_HN_N <-window(TRIM[, c("INDEX2005.09.01", "INDEX2006.12.01", "INDEX2008.06.01")], start="2019-03-01", end="2022-12-01")
+Y_USA_N   <- xts(x=Y_USA_N$pred, order.by = dates)
+REG_HN_N<- merge(DUM_HN_N, Y_USA_N, join="left")
+data <- rep(1, 16)
+i_HN_N = xts(x = data, order.by = dates)
+REG_HN_N<- merge(REG_HN_N, i_HN_N, join="left")
+Y_N<-sarima.for(Y,16,2,0,0,1,0,0,4, xreg=REG_HN, newxreg=REG_HN_N) 
+```
+
+## Simulación de shock en el PIB de USA
+Simulación
+```{r}
+dates <- seq(as.Date("2019-03-01"), length = 16, by = "quarter")
+shock <-c()
+shock[1]<- 0
+shock[2]<- -3*(1/-0.1896)
+for(i in 3:16 ){
+  shock[i]<-0.85*shock[i-1]
+}
+shock_Y_USA= xts(x = shock, order.by = dates) 
+REG_SHOCK<-window(TRIM[, c("INDEX2008.12.01")], start="2019-03-01", end="2022-12-01")
+REG_SHOCK<- merge(REG_SHOCK, shock_Y_USA, join="left")
+Y_USA_SHOCK<-sarima.for(Y_USA,16,2,0,0,1,0,0,4, xreg=DUM_USA, newxreg=REG_SHOCK) 
+```
+
+Transimisión del shock al PIB de Honduras
+```{r}
+Y_USA_S <- xts(x=Y_USA_SHOCK$pred, order.by = dates)
+REG_HN_S<- merge(DUM_HN_N, Y_USA_S, join="left")
+REG_HN_S<- merge(REG_HN_S, i_HN_N, join="left")
+Y_S<-      sarima.for(Y,16,2,0,0,1,0,0,4, xreg=REG_HN, newxreg=REG_HN_S) 
+```
+
+# Ejercicio fuera de muestra ipc de Honduras 
+
+## Ipc de Honduras
+```{r}
+IPC<-MES$IPC
+FECHA            <-index(MES)
+t_inicial        <-first(FECHA,'1 month')
+index_final      <- last(index(FECHA))
+fecha_contador   <-seq(as.Date(t_inicial), length =index_final, by = "months")
+counter          <-c(1:index_final)  
+contador         <-xts(x=counter, order.by = fecha_contador)
+inicio_estimacion<-coredata(contador["1996-01-01"])[1]
+final_estimacion <-coredata(contador["2006-12-01"])[1]
+H                <-3
+dates_F          <- seq(as.Date(FECHA[inicio_estimacion]), length =final_estimacion-inicio_estimacion+H, by = "months")
+assign(paste('IPC_', H, sep=''), xts(x=window(log(MES$IPC), start=FECHA[inicio_estimacion], end=FECHA[final_estimacion+H-1]), order.by = dates_F))
+
+for(i in 1:10){
+Y                <-window(log(MES$IPC), start=FECHA[inicio_estimacion], end=FECHA[final_estimacion-1+i])
+Y_F              <-sarima.for(Y,H,3,0,11,0,1,0,12, xreg=NULL, newxreg=NULL) 
+dates_out        <-seq(as.Date(FECHA[final_estimacion+i]), length =H, by = "months")
+Y_F_P            <-xts(x=Y_F$pred, order.by = dates_out)
+assign(paste('IPC_', H, sep=''),rbind(get(paste('IPC_', H, sep='')), Y_F_P[H]) )
+}
+compara          <-merge(log(MES$IPC),get(paste('IPC_', H, sep='')),join='right',fill=0) 
+compara 
+```
