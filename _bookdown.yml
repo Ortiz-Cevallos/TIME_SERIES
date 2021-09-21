@@ -1,5 +1,5 @@
 book_filename: "bookdown-start"
-chapter_name: "Chapter "
+chapter_name: "Capítulo "
 repo: https://ortiz-cevallos.github.io/TIME_SERIES/bookdown-start
 output_dir: docs
 rmd_files: ["index.Rmd", "06-references.Rmd"]

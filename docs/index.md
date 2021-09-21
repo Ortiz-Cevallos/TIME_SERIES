@@ -8,8 +8,8 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-
 ---
+
 
 
 
@@ -42,7 +42,7 @@ ggtitle("LOGARITMO DEL IMAE EN HONDURAS")
 P
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-2-1.png)<!-- -->
 
 ##  Serie Ruido Blanco (WN)
 
@@ -52,7 +52,7 @@ autoplot(X_WN)+
 ggtitle("Serie Ruido Blanco")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-3-1.png)<!-- -->
 
 ##  Serie Random Walk (RW)
 
@@ -62,7 +62,7 @@ autoplot(X_RW)+
 ggtitle("Serie Random Walk")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-4-1.png)<!-- -->
 
 
 ```r
@@ -73,7 +73,7 @@ rw_drift <- cumsum(wn_drift)
 plot.ts(cbind(white_noise, random_walk, wn_drift, rw_drift))
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-5-1.png)<!-- -->
 
 ##  Proceso ARMA
 
@@ -84,7 +84,7 @@ X_AR1<-arima.sim(list(order=c(1,0,0), ar=c(0.90)), n=100)
 autoplot(X_AR1)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-6-1.png)<!-- -->
 Simulando un proceso AR(2)
 
 ```r
@@ -92,7 +92,7 @@ X_MA1<-arima.sim(list(order=c(0,0,1), ma=c(-0.98)), n=100)+50
 autoplot(X_MA1)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-7-1.png)<!-- -->
 
 Correlación entre el nivel del PIB de Honduras y el de USA
 
@@ -113,7 +113,7 @@ Scatter plot
 plot(cbind(USA, HN))
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-9-1.png)<!-- -->
 
 Correlación entre el la tasa de crecimiento del PIB de Honduras y el de USA
 
@@ -133,7 +133,7 @@ Scatter plot
 plot(USA, HN)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-11-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-11-1.png)<!-- -->
 
 Función de autocorrelación del PIB de Honduras
 
@@ -142,7 +142,7 @@ PIB<-as.ts(HN)
 acf(PIB, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-12-1.png)<!-- -->
 
 Función de autocorrelación parcial del PIB de Honduras
 
@@ -151,7 +151,7 @@ PIB<-as.ts(HN)
 pacf(PIB, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-13-1.png)<!-- -->
 
 Función de autocorrelación de un proceso ruído blanco
 
@@ -159,7 +159,7 @@ Función de autocorrelación de un proceso ruído blanco
 acf(X_WN, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-14-1.png)<!-- -->
 
 
 Función de autocorrelación parcial de un proceso ruído blanco
@@ -168,7 +168,7 @@ Función de autocorrelación parcial de un proceso ruído blanco
 pacf(X_WN, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-15-1.png)<!-- -->
 
 Función de autocorrelación de un proceso RW
 
@@ -176,7 +176,7 @@ Función de autocorrelación de un proceso RW
 acf(X_RW, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-16-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-16-1.png)<!-- -->
 
 
 Función de autocorrelación parcial de un proceso RW
@@ -185,7 +185,7 @@ Función de autocorrelación parcial de un proceso RW
 pacf(X_RW, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-17-1.png)<!-- -->
 
 
 Función de autocorrelación de un proceso AR(1)
@@ -194,7 +194,7 @@ Función de autocorrelación de un proceso AR(1)
 acf(X_AR1, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-18-1.png)<!-- -->
 
 Función de autocorrelación parcial de un proceso AR(1)
 
@@ -202,7 +202,7 @@ Función de autocorrelación parcial de un proceso AR(1)
 pacf(X_AR1, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-19-1.png)<!-- -->
 
 Función de autocorrelación de un proceso MA(1)
 
@@ -210,7 +210,7 @@ Función de autocorrelación de un proceso MA(1)
 acf(X_MA1, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-20-1.png)<!-- -->
 
 Función de autocorrelación parcial de un proceso MA(1)
 
@@ -218,7 +218,7 @@ Función de autocorrelación parcial de un proceso MA(1)
 pacf(X_MA1, lag.max = 24, plot=TRUE)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-21-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-21-1.png)<!-- -->
 
 ## Simulación de procesos 
 
@@ -232,7 +232,7 @@ X_SARIMA<- simulate(model, nsim=200)
 plot(X_SARIMA)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-22-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-22-1.png)<!-- -->
 
 ### Estimación de un proceso ARIMA
 
@@ -241,7 +241,7 @@ x<-arima.sim(list(order=c(0,0,2), ma=c(1.5,-0.75)), n=100)+50
 x_fit<-sarima(x, p=2, d=0, q=0)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-23-1.png)<!-- -->
 
 ```r
 x_fit$ttable
@@ -262,7 +262,7 @@ autoplot(ts(cbind(imae, imaef), start = c(2001/01/01), frequency = 12 ),
          facets = FALSE)+xlab("Years")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-24-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-24-1.png)<!-- -->
 
 Pronósticos del IMAE de Honduras 24 meses en adelante a partir de un proceso SARIMA(1,1,1)
 
@@ -272,7 +272,7 @@ imaef<-IMAE["/2012-12-01"]
 resultado<-sarima.for(imae, n.ahead=24,1,1,1)
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-25-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-25-1.png)<!-- -->
 
 
 ##  Modelos para hacer pronósticos del PIB de Honduras 
@@ -357,7 +357,7 @@ PIB_HN <-sarima(Y, 2,0,0,P=1, D=0, Q=0, 4, xreg=REG_HN)
 ## converged
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-27-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-27-1.png)<!-- -->
 
 ```r
 PIB_HN$ttable
@@ -413,7 +413,7 @@ PIB_USA   <-sarima(Y_USA, 2,0,0,P=1, D=0, Q=0, 4, xreg=DUM_USA )
 ## converged
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-28-1.png)<!-- -->
 
 ```r
 PIB_USA$ttable
@@ -436,7 +436,7 @@ DUM_USA_N <-window(TRIM[, c("INDEX2008.12.01", "INDEX2009.12.01")], start="2019-
 Y_USA_N   <-sarima.for(Y_USA,16,2,0,0,1,0,0,4, xreg=DUM_USA, newxreg=DUM_USA_N) 
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-29-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-29-1.png)<!-- -->
 
 Pronóstico del PIB de Honduras
 
@@ -451,7 +451,7 @@ REG_HN_N<- merge(REG_HN_N, i_HN_N, join="left")
 Y_N<-sarima.for(Y,16,2,0,0,1,0,0,4, xreg=REG_HN, newxreg=REG_HN_N) 
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-30-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-30-1.png)<!-- -->
 
 ## Simulación de shock en el PIB de USA
 Simulación
@@ -470,7 +470,7 @@ REG_SHOCK<- merge(REG_SHOCK, shock_Y_USA, join="left")
 Y_USA_SHOCK<-sarima.for(Y_USA,16,2,0,0,1,0,0,4, xreg=DUM_USA, newxreg=REG_SHOCK) 
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-31-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-31-1.png)<!-- -->
 
 Transimisión del shock al PIB de Honduras
 
@@ -481,7 +481,7 @@ REG_HN_S<- merge(REG_HN_S, i_HN_N, join="left")
 Y_S<-      sarima.for(Y,16,2,0,0,1,0,0,4, xreg=REG_HN, newxreg=REG_HN_S) 
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-32-1.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-32-1.png)<!-- -->
 
 # Ejercicio fuera de muestra ipc de Honduras 
 
@@ -510,7 +510,7 @@ assign(paste('IPC_', H, sep=''),rbind(get(paste('IPC_', H, sep='')), Y_F_P[H]) )
 }
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-33-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-2.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-3.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-4.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-5.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-6.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-7.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-8.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-9.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-10.png" width="672" />
+![](index_files/figure-epub3/unnamed-chunk-33-1.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-2.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-3.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-4.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-5.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-6.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-7.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-8.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-9.png)<!-- -->![](index_files/figure-epub3/unnamed-chunk-33-10.png)<!-- -->
 
 ```r
 compara          <-merge(log(MES$IPC),get(paste('IPC_', H, sep='')),join='right',fill=0) 
