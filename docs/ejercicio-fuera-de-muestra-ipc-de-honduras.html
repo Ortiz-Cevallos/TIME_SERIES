@@ -24,7 +24,7 @@
 <meta name="author" content="LUIS ORTIZ-CEVALLOS" />
 
 
-<meta name="date" content="2021-09-20" />
+<meta name="date" content="2021-09-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,7 +131,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">SERIES DE TIEMPO</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es una de serie de tiempo?</a>
@@ -199,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb42-18"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#cb42-18" aria-hidden="true" tabindex="-1"></a>Y_F_P            <span class="ot">&lt;-</span><span class="fu">xts</span>(<span class="at">x=</span>Y_F<span class="sc">$</span>pred, <span class="at">order.by =</span> dates_out)</span>
 <span id="cb42-19"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#cb42-19" aria-hidden="true" tabindex="-1"></a><span class="fu">assign</span>(<span class="fu">paste</span>(<span class="st">&#39;IPC_&#39;</span>, H, <span class="at">sep=</span><span class="st">&#39;&#39;</span>),<span class="fu">rbind</span>(<span class="fu">get</span>(<span class="fu">paste</span>(<span class="st">&#39;IPC_&#39;</span>, H, <span class="at">sep=</span><span class="st">&#39;&#39;</span>)), Y_F_P[H]) )</span>
 <span id="cb42-20"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#cb42-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-1.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-2.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-3.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-4.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-5.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-6.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-7.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-8.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-9.png" width="672" /><img src="bookdown-demo_files/figure-html/unnamed-chunk-33-10.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-33-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-2.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-3.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-4.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-5.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-6.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-7.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-8.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-9.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-33-10.png" width="672" /></p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#cb43-1" aria-hidden="true" tabindex="-1"></a>compara          <span class="ot">&lt;-</span><span class="fu">merge</span>(<span class="fu">log</span>(MES<span class="sc">$</span>IPC),<span class="fu">get</span>(<span class="fu">paste</span>(<span class="st">&#39;IPC_&#39;</span>, H, <span class="at">sep=</span><span class="st">&#39;&#39;</span>)),<span class="at">join=</span><span class="st">&#39;right&#39;</span>,<span class="at">fill=</span><span class="dv">0</span>) </span>
 <span id="cb43-2"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#cb43-2" aria-hidden="true" tabindex="-1"></a>compara </span></code></pre></div>
 <pre><code>##                 IPC    IPC.1
@@ -398,7 +398,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"download": ["bookdown-start.pdf", "bookdown-start.epub"],
 "toc": {
 "collapse": "subsection"
 }

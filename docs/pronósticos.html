@@ -24,7 +24,7 @@
 <meta name="author" content="LUIS ORTIZ-CEVALLOS" />
 
 
-<meta name="date" content="2021-09-20" />
+<meta name="date" content="2021-09-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,7 +131,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">SERIES DE TIEMPO</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es una de serie de tiempo?</a>
@@ -186,12 +186,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb27-4"><a href="pronósticos.html#cb27-4" aria-hidden="true" tabindex="-1"></a>imaef<span class="ot">&lt;-</span><span class="fu">as.xts</span>(imaef)</span>
 <span id="cb27-5"><a href="pronósticos.html#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(<span class="fu">ts</span>(<span class="fu">cbind</span>(imae, imaef), <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2001</span><span class="sc">/</span><span class="dv">01</span><span class="sc">/</span><span class="dv">01</span>), <span class="at">frequency =</span> <span class="dv">12</span> ),</span>
 <span id="cb27-6"><a href="pronósticos.html#cb27-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">facets =</span> <span class="cn">FALSE</span>)<span class="sc">+</span><span class="fu">xlab</span>(<span class="st">&quot;Years&quot;</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>Pronósticos del IMAE de Honduras 24 meses en adelante a partir de un proceso SARIMA(1,1,1)</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="pronósticos.html#cb28-1" aria-hidden="true" tabindex="-1"></a>imae<span class="ot">&lt;-</span>IMAE[<span class="st">&quot;2001-01-01/2010-12-01&quot;</span>]</span>
 <span id="cb28-2"><a href="pronósticos.html#cb28-2" aria-hidden="true" tabindex="-1"></a>imaef<span class="ot">&lt;-</span>IMAE[<span class="st">&quot;/2012-12-01&quot;</span>]</span>
 <span id="cb28-3"><a href="pronósticos.html#cb28-3" aria-hidden="true" tabindex="-1"></a>resultado<span class="ot">&lt;-</span><span class="fu">sarima.for</span>(imae, <span class="at">n.ahead=</span><span class="dv">24</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 </div>
 <div id="modelos-para-hacer-pronósticos-del-pib-de-honduras" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Modelos para hacer pronósticos del PIB de Honduras</h2>
@@ -282,7 +282,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## iter  13 value 0.185068
 ## final  value 0.185068 
 ## converged</code></pre>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="pronósticos.html#cb32-1" aria-hidden="true" tabindex="-1"></a>PIB_HN<span class="sc">$</span>ttable</span></code></pre></div>
 <pre><code>##                 Estimate     SE t.value p.value
 ## ar1               0.5867 0.1333  4.4015  0.0001
@@ -324,7 +324,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## iter  22 value -0.441119
 ## final  value -0.441119 
 ## converged</code></pre>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="pronósticos.html#cb36-1" aria-hidden="true" tabindex="-1"></a>PIB_USA<span class="sc">$</span>ttable</span></code></pre></div>
 <pre><code>##                 Estimate     SE t.value p.value
 ## ar1               1.2831 0.0888 14.4513  0.0000
@@ -336,7 +336,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Pronóstico del PIB de USA</p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="pronósticos.html#cb38-1" aria-hidden="true" tabindex="-1"></a>DUM_USA_N <span class="ot">&lt;-</span><span class="fu">window</span>(TRIM[, <span class="fu">c</span>(<span class="st">&quot;INDEX2008.12.01&quot;</span>, <span class="st">&quot;INDEX2009.12.01&quot;</span>)], <span class="at">start=</span><span class="st">&quot;2019-03-01&quot;</span>, <span class="at">end=</span><span class="st">&quot;2022-12-01&quot;</span>)</span>
 <span id="cb38-2"><a href="pronósticos.html#cb38-2" aria-hidden="true" tabindex="-1"></a>Y_USA_N   <span class="ot">&lt;-</span><span class="fu">sarima.for</span>(Y_USA,<span class="dv">16</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">4</span>, <span class="at">xreg=</span>DUM_USA, <span class="at">newxreg=</span>DUM_USA_N) </span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 <p>Pronóstico del PIB de Honduras</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="pronósticos.html#cb39-1" aria-hidden="true" tabindex="-1"></a>dates <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fu">as.Date</span>(<span class="st">&quot;2019-03-01&quot;</span>), <span class="at">length =</span> <span class="dv">16</span>, <span class="at">by =</span> <span class="st">&quot;quarter&quot;</span>)</span>
 <span id="cb39-2"><a href="pronósticos.html#cb39-2" aria-hidden="true" tabindex="-1"></a>DUM_HN_N <span class="ot">&lt;-</span><span class="fu">window</span>(TRIM[, <span class="fu">c</span>(<span class="st">&quot;INDEX2005.09.01&quot;</span>, <span class="st">&quot;INDEX2006.12.01&quot;</span>, <span class="st">&quot;INDEX2008.06.01&quot;</span>)], <span class="at">start=</span><span class="st">&quot;2019-03-01&quot;</span>, <span class="at">end=</span><span class="st">&quot;2022-12-01&quot;</span>)</span>
@@ -346,7 +346,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb39-6"><a href="pronósticos.html#cb39-6" aria-hidden="true" tabindex="-1"></a>i_HN_N <span class="ot">=</span> <span class="fu">xts</span>(<span class="at">x =</span> data, <span class="at">order.by =</span> dates)</span>
 <span id="cb39-7"><a href="pronósticos.html#cb39-7" aria-hidden="true" tabindex="-1"></a>REG_HN_N<span class="ot">&lt;-</span> <span class="fu">merge</span>(REG_HN_N, i_HN_N, <span class="at">join=</span><span class="st">&quot;left&quot;</span>)</span>
 <span id="cb39-8"><a href="pronósticos.html#cb39-8" aria-hidden="true" tabindex="-1"></a>Y_N<span class="ot">&lt;-</span><span class="fu">sarima.for</span>(Y,<span class="dv">16</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">4</span>, <span class="at">xreg=</span>REG_HN, <span class="at">newxreg=</span>REG_HN_N) </span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 </div>
 <div id="simulación-de-shock-en-el-pib-de-usa" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Simulación de shock en el PIB de USA</h2>
@@ -362,13 +362,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb40-9"><a href="pronósticos.html#cb40-9" aria-hidden="true" tabindex="-1"></a>REG_SHOCK<span class="ot">&lt;-</span><span class="fu">window</span>(TRIM[, <span class="fu">c</span>(<span class="st">&quot;INDEX2008.12.01&quot;</span>)], <span class="at">start=</span><span class="st">&quot;2019-03-01&quot;</span>, <span class="at">end=</span><span class="st">&quot;2022-12-01&quot;</span>)</span>
 <span id="cb40-10"><a href="pronósticos.html#cb40-10" aria-hidden="true" tabindex="-1"></a>REG_SHOCK<span class="ot">&lt;-</span> <span class="fu">merge</span>(REG_SHOCK, shock_Y_USA, <span class="at">join=</span><span class="st">&quot;left&quot;</span>)</span>
 <span id="cb40-11"><a href="pronósticos.html#cb40-11" aria-hidden="true" tabindex="-1"></a>Y_USA_SHOCK<span class="ot">&lt;-</span><span class="fu">sarima.for</span>(Y_USA,<span class="dv">16</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">4</span>, <span class="at">xreg=</span>DUM_USA, <span class="at">newxreg=</span>REG_SHOCK) </span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <p>Transimisión del shock al PIB de Honduras</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="pronósticos.html#cb41-1" aria-hidden="true" tabindex="-1"></a>Y_USA_S <span class="ot">&lt;-</span> <span class="fu">xts</span>(<span class="at">x=</span>Y_USA_SHOCK<span class="sc">$</span>pred, <span class="at">order.by =</span> dates)</span>
 <span id="cb41-2"><a href="pronósticos.html#cb41-2" aria-hidden="true" tabindex="-1"></a>REG_HN_S<span class="ot">&lt;-</span> <span class="fu">merge</span>(DUM_HN_N, Y_USA_S, <span class="at">join=</span><span class="st">&quot;left&quot;</span>)</span>
 <span id="cb41-3"><a href="pronósticos.html#cb41-3" aria-hidden="true" tabindex="-1"></a>REG_HN_S<span class="ot">&lt;-</span> <span class="fu">merge</span>(REG_HN_S, i_HN_N, <span class="at">join=</span><span class="st">&quot;left&quot;</span>)</span>
 <span id="cb41-4"><a href="pronósticos.html#cb41-4" aria-hidden="true" tabindex="-1"></a>Y_S<span class="ot">&lt;-</span>      <span class="fu">sarima.for</span>(Y,<span class="dv">16</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">4</span>, <span class="at">xreg=</span>REG_HN, <span class="at">newxreg=</span>REG_HN_S) </span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 </div>
 </div>
             </section>
@@ -419,7 +419,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"download": ["bookdown-start.pdf", "bookdown-start.epub"],
 "toc": {
 "collapse": "subsection"
 }

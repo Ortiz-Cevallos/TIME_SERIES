@@ -24,7 +24,7 @@
 <meta name="author" content="LUIS ORTIZ-CEVALLOS" />
 
 
-<meta name="date" content="2021-09-20" />
+<meta name="date" content="2021-09-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,7 +131,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">SERIES DE TIEMPO</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es una de serie de tiempo?</a>
@@ -178,7 +178,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">INTRODUCCIÓN A SERIES DE TIEMPO</h1>
 <p class="author"><em>LUIS ORTIZ-CEVALLOS</em></p>
-<p class="date"><em>2021-09-20</em></p>
+<p class="date"><em>2021-09-21</em></p>
 </div>
 <div id="qué-es-una-de-serie-de-tiempo" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> ¿Qué es una de serie de tiempo?</h1>
@@ -201,37 +201,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-17"><a href="index.html#cb1-17" aria-hidden="true" tabindex="-1"></a>P<span class="ot">&lt;-</span>ggplot2<span class="sc">::</span><span class="fu">autoplot</span>(<span class="fu">log</span>(IMAE))<span class="sc">+</span><span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>)<span class="sc">+</span></span>
 <span id="cb1-18"><a href="index.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">&quot;LOGARITMO DEL IMAE EN HONDURAS&quot;</span>)</span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a>P</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <div id="serie-ruido-blanco-wn" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Serie Ruido Blanco (WN)</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="index.html#cb3-1" aria-hidden="true" tabindex="-1"></a>X_WN<span class="ot">&lt;-</span><span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>)), <span class="at">n=</span><span class="dv">1000</span>, <span class="at">mean=</span><span class="dv">4</span>, <span class="at">sd=</span><span class="dv">2</span>)</span>
 <span id="cb3-2"><a href="index.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(X_WN)<span class="sc">+</span></span>
 <span id="cb3-3"><a href="index.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">&quot;Serie Ruido Blanco&quot;</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 <div id="serie-random-walk-rw" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Serie Random Walk (RW)</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="index.html#cb4-1" aria-hidden="true" tabindex="-1"></a>X_RW<span class="ot">&lt;-</span><span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>)), <span class="at">n=</span><span class="dv">100</span>)</span>
 <span id="cb4-2"><a href="index.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(X_RW)<span class="sc">+</span></span>
 <span id="cb4-3"><a href="index.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">&quot;Serie Random Walk&quot;</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="index.html#cb5-1" aria-hidden="true" tabindex="-1"></a>white_noise <span class="ot">&lt;-</span> <span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>)), <span class="at">n=</span><span class="dv">100</span>)</span>
 <span id="cb5-2"><a href="index.html#cb5-2" aria-hidden="true" tabindex="-1"></a>random_walk <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(white_noise)</span>
 <span id="cb5-3"><a href="index.html#cb5-3" aria-hidden="true" tabindex="-1"></a>wn_drift <span class="ot">&lt;-</span> <span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>)), <span class="at">n=</span><span class="dv">100</span>, <span class="at">mean=</span><span class="fl">0.4</span>)</span>
 <span id="cb5-4"><a href="index.html#cb5-4" aria-hidden="true" tabindex="-1"></a>rw_drift <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(wn_drift)</span>
 <span id="cb5-5"><a href="index.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(<span class="fu">cbind</span>(white_noise, random_walk, wn_drift, rw_drift))</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 <div id="proceso-arma" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Proceso ARMA</h2>
 <p>Simulando un proceso AR(1)</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="index.html#cb6-1" aria-hidden="true" tabindex="-1"></a>X_AR1<span class="ot">&lt;-</span><span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">ar=</span><span class="fu">c</span>(<span class="fl">0.90</span>)), <span class="at">n=</span><span class="dv">100</span>)</span>
 <span id="cb6-2"><a href="index.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(X_AR1)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 Simulando un proceso AR(2)</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="index.html#cb7-1" aria-hidden="true" tabindex="-1"></a>X_MA1<span class="ot">&lt;-</span><span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">ma=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.98</span>)), <span class="at">n=</span><span class="dv">100</span>)<span class="sc">+</span><span class="dv">50</span></span>
 <span id="cb7-2"><a href="index.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(X_MA1)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Correlación entre el nivel del PIB de Honduras y el de USA</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="index.html#cb8-1" aria-hidden="true" tabindex="-1"></a>USA<span class="ot">&lt;-</span><span class="fu">coredata</span>(<span class="fu">log</span>(TRIM<span class="sc">$</span>PIB_USA[<span class="st">&quot;2001-01-01/&quot;</span>]))</span>
 <span id="cb8-2"><a href="index.html#cb8-2" aria-hidden="true" tabindex="-1"></a>HN<span class="ot">&lt;-</span><span class="fu">coredata</span>(<span class="fu">log</span>(TRIM<span class="sc">$</span>PIB[<span class="st">&quot;2001-01-01/&quot;</span>]))</span>
@@ -240,7 +240,7 @@ Simulando un proceso AR(2)</p>
 ## PIB_USA 0.9775886</code></pre>
 <p>Scatter plot</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="index.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">cbind</span>(USA, HN))</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>Correlación entre el la tasa de crecimiento del PIB de Honduras y el de USA</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="index.html#cb11-1" aria-hidden="true" tabindex="-1"></a>USA<span class="ot">&lt;-</span><span class="fu">coredata</span>(<span class="fu">diff</span>(USA, <span class="at">lag=</span><span class="dv">4</span>))</span>
 <span id="cb11-2"><a href="index.html#cb11-2" aria-hidden="true" tabindex="-1"></a>HN<span class="ot">&lt;-</span><span class="fu">coredata</span>(<span class="fu">diff</span>(HN, <span class="at">lag=</span><span class="dv">4</span>))</span>
@@ -249,39 +249,39 @@ Simulando un proceso AR(2)</p>
 ## PIB_USA 0.5405966</code></pre>
 <p>Scatter plot</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="index.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(USA, HN)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>Función de autocorrelación del PIB de Honduras</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="index.html#cb14-1" aria-hidden="true" tabindex="-1"></a>PIB<span class="ot">&lt;-</span><span class="fu">as.ts</span>(HN)</span>
 <span id="cb14-2"><a href="index.html#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(PIB, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>Función de autocorrelación parcial del PIB de Honduras</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="index.html#cb15-1" aria-hidden="true" tabindex="-1"></a>PIB<span class="ot">&lt;-</span><span class="fu">as.ts</span>(HN)</span>
 <span id="cb15-2"><a href="index.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(PIB, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>Función de autocorrelación de un proceso ruído blanco</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="index.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(X_WN, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>Función de autocorrelación parcial de un proceso ruído blanco</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="index.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(X_WN, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>Función de autocorrelación de un proceso RW</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="index.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(X_RW, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>Función de autocorrelación parcial de un proceso RW</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="index.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(X_RW, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>Función de autocorrelación de un proceso AR(1)</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="index.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(X_AR1, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p>Función de autocorrelación parcial de un proceso AR(1)</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="index.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(X_AR1, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>Función de autocorrelación de un proceso MA(1)</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="index.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(X_MA1, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <p>Función de autocorrelación parcial de un proceso MA(1)</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="index.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(X_MA1, <span class="at">lag.max =</span> <span class="dv">24</span>, <span class="at">plot=</span><span class="cn">TRUE</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 </div>
 <div id="simulación-de-procesos" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Simulación de procesos</h2>
@@ -290,12 +290,12 @@ Simulando un proceso AR(2)</p>
 <span id="cb24-2"><a href="index.html#cb24-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">fixed=</span><span class="fu">c</span>(<span class="at">phi=</span><span class="fl">0.0</span>, <span class="at">theta=</span><span class="sc">-</span><span class="fl">0.0</span>, <span class="at">Phi=</span><span class="fl">0.0</span>, <span class="at">Theta=</span><span class="sc">-</span><span class="fl">0.0</span>))</span>
 <span id="cb24-3"><a href="index.html#cb24-3" aria-hidden="true" tabindex="-1"></a>X_SARIMA<span class="ot">&lt;-</span> <span class="fu">simulate</span>(model, <span class="at">nsim=</span><span class="dv">200</span>)</span>
 <span id="cb24-4"><a href="index.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(X_SARIMA)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <div id="estimación-de-un-proceso-arima" class="section level3" number="1.4.1">
 <h3><span class="header-section-number">1.4.1</span> Estimación de un proceso ARIMA</h3>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="index.html#cb25-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">arima.sim</span>(<span class="fu">list</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">2</span>), <span class="at">ma=</span><span class="fu">c</span>(<span class="fl">1.5</span>,<span class="sc">-</span><span class="fl">0.75</span>)), <span class="at">n=</span><span class="dv">100</span>)<span class="sc">+</span><span class="dv">50</span></span>
 <span id="cb25-2"><a href="index.html#cb25-2" aria-hidden="true" tabindex="-1"></a>x_fit<span class="ot">&lt;-</span><span class="fu">sarima</span>(x, <span class="at">p=</span><span class="dv">2</span>, <span class="at">d=</span><span class="dv">0</span>, <span class="at">q=</span><span class="dv">0</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="index.html#cb26-1" aria-hidden="true" tabindex="-1"></a>x_fit<span class="sc">$</span>ttable</span></code></pre></div>
 </div>
 </div>
@@ -348,7 +348,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"download": ["bookdown-start.pdf", "bookdown-start.epub"],
 "toc": {
 "collapse": "subsection"
 }
