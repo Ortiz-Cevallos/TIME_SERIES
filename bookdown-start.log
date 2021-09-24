@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  23 SEP 2021 23:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  24 SEP 2021 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -969,7 +969,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: index_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 <use index_files/figure-latex/unnamed-chunk-6-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 [][]
  []
 
@@ -1096,7 +1096,7 @@ r/m/n/10 29
 
 [29]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 652.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 653.
 File: index_files/figure-latex/unnamed-chunk-31-1.pdf Graphic file (type pdf)
 <use index_files/figure-latex/unnamed-chunk-31-1.pdf>
 
@@ -1111,7 +1111,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [31] [32]
 Chapter 3.
 
-Overfull \vbox (0.72678pt too high) detected at line 717
+Overfull \vbox (0.72678pt too high) detected at line 718
  []
 
 [33
@@ -1207,1052 +1207,148 @@ e pdf)
 File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-30.pdf Graphic file (typ
 e pdf)
 <use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-30.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-31.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-31.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-32.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-32.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-33.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-33.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-34.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-34.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-35.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-35.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-36.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-36.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-37.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-37.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-38.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-38.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-39.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-39.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-40.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-40.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-41.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-41.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-42.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-42.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-43.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-43.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-44.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-44.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-45.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-45.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-46.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-46.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-47.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-47.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-48.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-48.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-49.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-49.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-50.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-50.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-51.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-51.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-52.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-52.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-53.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-53.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-54.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-54.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-55.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-55.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-56.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-56.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-57.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-57.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-58.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-58.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-59.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-59.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-60.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-60.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-61.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-61.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-62.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-62.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-63.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-63.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-64.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-64.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-65.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-65.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-66.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-66.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-67.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-67.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-68.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-68.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-69.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-69.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-70.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-70.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-71.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-71.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-72.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-72.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-73.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-73.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-74.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-74.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-75.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-75.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-76.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-76.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-77.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-77.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-78.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-78.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-79.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-79.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-80.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-80.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-81.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-81.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-82.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-82.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-83.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-83.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-84.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-84.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-85.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-85.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-86.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-86.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-87.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-87.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-88.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-88.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-89.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-89.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-90.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-90.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-91.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-91.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-92.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-92.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-93.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-93.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-94.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-94.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-95.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-95.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-96.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-96.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-97.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-97.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-98.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-98.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-99.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-99.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-100.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-100.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-101.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-101.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-102.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-102.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-103.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-103.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-104.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-104.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-105.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-105.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-106.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-106.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-107.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-107.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-108.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-108.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-109.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-109.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-110.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-110.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-111.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-111.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-112.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-112.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-113.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-113.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-114.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-114.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-115.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-115.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-116.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-116.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-117.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-117.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-118.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-118.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-119.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-119.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-120.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-120.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-121.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-121.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-122.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-122.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-123.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-123.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-124.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-124.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-125.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-125.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-126.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-126.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-127.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-127.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-128.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-128.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-129.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-129.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-130.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-130.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-131.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-131.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-132.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-132.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-133.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-133.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-134.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-134.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-135.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-135.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-136.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-136.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-137.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-137.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-138.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-138.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-139.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-139.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-140.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-140.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-141.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-141.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-142.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-142.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-143.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-2-143.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 []
  []
 
@@ -2302,181 +1398,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[55]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[58]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[63]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[64]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[66]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[67]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[68]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[69]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[70]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[72]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[74]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[77]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[79]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[82]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[83]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[84]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[85]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[86]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[87]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[88]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[90]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[92]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[93]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[94]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[95]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[97]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[98]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[99]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[101]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[102]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[103]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[104]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[105]
-Underfull \vbox (badness 10000) detected at line 790
+Overfull \vbox (0.68402pt too high) detected at line 820
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[106]
+[50]
 File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type
  pdf)
 <use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-1.pdf>
@@ -2567,1274 +1492,199 @@ e pdf)
 File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-30.pdf Graphic file (typ
 e pdf)
 <use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-30.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-31.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-31.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-32.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-32.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-33.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-33.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-34.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-34.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-35.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-35.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-36.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-36.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-37.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-37.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-38.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-38.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-39.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-39.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-40.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-40.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-41.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-41.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-42.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-42.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-43.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-43.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-44.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-44.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-45.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-45.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-46.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-46.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-47.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-47.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-48.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-48.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-49.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-49.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-50.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-50.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-51.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-51.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-52.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-52.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-53.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-53.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-54.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-54.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-55.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-55.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-56.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-56.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-57.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-57.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-58.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-58.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-59.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-59.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-60.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-60.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-61.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-61.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-62.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-62.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-63.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-63.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-64.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-64.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-65.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-65.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-66.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-66.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-67.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-67.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-68.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-68.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-69.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-69.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-70.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-70.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-71.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-71.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-72.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-72.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-73.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-73.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-74.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-74.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-75.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-75.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-76.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-76.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-77.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-77.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-78.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-78.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-79.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-79.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-80.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-80.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-81.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-81.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-82.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-82.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-83.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-83.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-84.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-84.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-85.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-85.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-86.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-86.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-87.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-87.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-88.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-88.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-89.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-89.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-90.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-90.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-91.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-91.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-92.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-92.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-93.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-93.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-94.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-94.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-95.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-95.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-96.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-96.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-97.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-97.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-98.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-98.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-99.pdf Graphic file (typ
-e pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-99.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-100.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-100.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-101.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-101.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-102.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-102.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-103.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-103.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-104.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-104.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-105.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-105.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-106.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-106.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-107.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-107.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-108.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-108.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-109.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-109.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-110.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-110.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-111.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-111.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-112.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-112.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-113.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-113.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-114.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-114.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-115.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-115.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-116.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-116.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-117.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-117.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-118.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-118.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-119.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-119.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-120.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-120.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-121.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-121.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-122.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-122.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-123.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-123.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-124.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-124.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-125.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-125.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-126.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-126.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-127.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-127.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-128.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-128.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-129.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-129.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-130.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-130.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-131.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-131.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-132.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-132.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-133.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-133.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-134.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-134.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-135.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-135.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-136.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-136.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-137.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-137.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-138.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-138.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-139.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-139.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-140.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-140.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-141.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-141.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-142.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-142.pdf>
-File: 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-143.pdf Graphic file (ty
-pe pdf)
-<use 03_EJERCICIOS_files/figure-latex/unnamed-chunk-3-143.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[107]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[108]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[109]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[110]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[111]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[112]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[113]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[114]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[115]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[116]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[117]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[120]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[121]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[122]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[123]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[124]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[125]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[126]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[127]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[128]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[129]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[130]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[131]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[132]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[133]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[134]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[135]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[136]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[137]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[138]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[139]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[140]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[141]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[142]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[143]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[144]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[145]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[146]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[147]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[148]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[149]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[150]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[151]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[152]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[153]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[154]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[155]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[156]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[157]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[158]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[159]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[160]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[161]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[162]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[163]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[164]
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[165]
+[52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[166]
+[53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[167]
+[54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[168]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[169]
+[56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[170]
+[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[171]
+[58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[172]
+[59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[173]
+[60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[174]
+[61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[175]
+[62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[176]
+[63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[177]
+[64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[178] [179] (./bookdown-start.bbl [180]) [181
+[65] [66] (./bookdown-start.bbl [67] [68
 
-] (./bookdown-start.aux)
+]) [69] (./bookdown-start.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -3842,12 +1692,12 @@ Package rerunfilecheck Info: File `bookdown-start.out' has not changed.
 (rerunfilecheck)             Checksum: 34FC18233430730D2598F16D1DB3383A;2193.
  ) 
 Here is how much of TeX's memory you used:
- 20698 strings out of 478492
- 468618 string characters out of 5860352
- 834037 words of memory out of 5000000
- 40408 multiletter control sequences out of 15000+600000
+ 18890 strings out of 478492
+ 364406 string characters out of 5860352
+ 811002 words of memory out of 5000000
+ 38826 multiletter control sequences out of 15000+600000
  409905 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,10n,120p,10709b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,10n,120p,2302b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-start.pdf (181 pages).
+Output written on bookdown-start.pdf (69 pages).

@@ -1,7 +1,7 @@
 --- 
 title: "INTRODUCCIÓN A SERIES DE TIEMPO"
 author: "LUIS ORTIZ-CEVALLOS"
-date: "2021-09-23"
+date: "2021-09-24"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -34,6 +34,7 @@ library("quantmod")
 TRIM<-as.xts(read.zoo("FINAL_HN.csv", index.column = 1, sep = ";", header=TRUE, format = "%d/%m/%Y"))
 MES<-as.xts(read.zoo("MES_HN.csv", index.column = 1, sep = ";", header=TRUE, format = "%d/%m/%Y"))
 IMAE<-MES$IMAE
+IMAE<-IMAE["2001-01-01/"]
 P<-ggplot2::autoplot(log(IMAE))+xlab("Year")+
 ggtitle("LOGARITMO DEL IMAE EN HONDURAS")
 ```

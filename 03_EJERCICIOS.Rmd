@@ -53,7 +53,7 @@ Donde $\Phi(L)=(1+0.65L),$ $\Theta(L)=(1-0.11L-0.71L^{2})$.
 
 Luego de tener esa específicación podemos comparar su desempeño predictivo con respecto a los datos observados que se encuentran *fuera de la muestra de estimación*. 
 
-Para ejemplificar se selecciona como horizonte predictivo 3 meses.
+Para ejemplificar se selecciona como horizonte predictivo 3 meses y definimos como **ventana de prueba**, el período marzo 2007 a septiembre 2009.
 
 ```{r}
 FECHA            <-index(MES)
@@ -73,7 +73,7 @@ length =final_muestra-H-final_estimacion, by = "months")
 assign(paste('PI_', H, sep=''), xts(x=window(INFLA, start=FECHA[inicio_estimacion], end=FECHA[final_estimacion+H-1]),
 order.by = DENTRO))
 Y <-window(INFLA, start=FECHA[inicio_estimacion], end=FECHA[final_estimacion])
-for(i in 1:length(FUERA)){
+for(i in 1:30){#length(FUERA)
 Y_F<-sarima.for(Y,H,1,1,2, xreg=NULL, 
                 newxreg=NULL, plot= FALSE) 
 dates_out<-as.Date(FECHA[final_estimacion+i+H-1])
@@ -95,9 +95,9 @@ ECM_1
 
 
 
-Luego de tener esa específicación podemos comparar su desempeño predictivo con respecto a otra específicación. De acuerdo a la literura un benchmark natural es un simple *random walk* (ver @Ohanian2001 y @Rogoff1983 entre otros).
+Luego de tener esa específicación podemos comparar su desempeño predictivo con respecto a otra. De acuerdo a la literura un benchmark natural es un simple **random walk** (ver @Ohanian2001 y @Rogoff1983 entre otros).
 
-En efecto, con un modelo *random walk* podemos calcular para el mismo horizonte de pronóstico (3) su ECM y compararlo con el obtenido por el modelo ARIMA(1,1,2).
+En efecto, con un modelo **random walk** podemos calcular para el mismo horizonte de pronóstico (h=3) su ECM como se muestra en el código siguiente correspondiente a una **ventana de prueba** que va de marzo 2007 a septiembre 2009
 
 ```{r}
 DENTRO<- seq(as.Date(FECHA[inicio_estimacion]), 
@@ -105,7 +105,7 @@ length =final_estimacion+H-inicio_estimacion, by = "months")
 assign(paste('PI_', H, sep=''), xts(x=window(INFLA, start=FECHA[inicio_estimacion], end=FECHA[final_estimacion+H-1]),
 order.by = DENTRO))
 Y <-window(INFLA, start=FECHA[inicio_estimacion], end=FECHA[final_estimacion])
-for(i in 1:length(FUERA)){
+for(i in 1:30){#length(FUERA)
 Y_F<-sarima.for(Y,H,1,0,0, xreg=NULL, 
                 newxreg=NULL, plot= FALSE) 
 dates_out<-as.Date(FECHA[final_estimacion+i+H-1])
@@ -125,14 +125,17 @@ ECM_2<-mean(compara2$DIFF)
 ECM_2
 ```
 
-Una forma muy usual para comparar dos específicaciones es definir un ratio entre cada uno de los ECM, sí este es mayor a 1 la específicación del que resulta el ECM del denominador sería la mejor.
+Una forma muy usual para comparar dos específicaciones es definir un ratio entre cada uno de los ECM, sí este es mayor (menor) a 1 la específicación del que resulta el ECM del denominador (numerador) sería la mejor.
 ```{r}
 ECM_1/ECM_2
 ```
 
-Sin embargo, un criterio *formal* para la deducción de referentes predictivos, consiste en conocer sí las diferencias en el ECM entre distintas especificaciones econométricas son significativas desde la perspectiva estadística, ello se realiza a través del test propuesto por @Giacomini2006.
+En efecto de acuerdo al ejercicio anterior el menor ECM corresponde al modelo ARIMA(1,1,2), el cual sería basado en estos resultado un mejor **benchmark predictivo**.
 
-La estructura de este test consiste en definir la hipótesis nula  que la diferencia en la métrica ECM de una especificación respecto a otra es cero. Luego se construye el estadístico que se denomina Giacomini y White (GW) de acuerdo a la ecuación (\#eq:2), el cuál se distribuye asintóticamente normal y se utiliza para contrastar la hipótesis nula.
+Sin embargo, un criterio **formal** para la deducción de referentes predictivos, consiste en conocer sí las diferencias en el ECM entre distintas especificaciones econométricas son significativas desde la perspectiva estadística, ello se realiza a través del test propuesto por @Giacomini2006.
+
+La estructura de este test consiste en definir la hipótesis nula  que la diferencia en la métrica ECM de una especificación respecto a otra es cero. 
+Luego se construye el estadístico que se denomina Giacomini y White (GW) de acuerdo a la ecuación (\#eq:2), el cuál se distribuye asintóticamente normal y se utiliza para contrastar la hipótesis nula.
 
 \begin{equation} 
 GW_{h}^{i,j}= \left\{ \begin{array}{lcll}

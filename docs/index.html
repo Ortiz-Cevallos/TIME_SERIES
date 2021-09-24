@@ -24,7 +24,7 @@
 <meta name="author" content="LUIS ORTIZ-CEVALLOS" />
 
 
-<meta name="date" content="2021-09-23" />
+<meta name="date" content="2021-09-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">INTRODUCCIÓN A SERIES DE TIEMPO</h1>
 <p class="author"><em>LUIS ORTIZ-CEVALLOS</em></p>
-<p class="date"><em>2021-09-23</em></p>
+<p class="date"><em>2021-09-24</em></p>
 </div>
 <div id="qué-es-una-de-serie-de-tiempo" class="section level1" number="1">
 <h1><span class="header-section-number">Capítulo 1</span> ¿Qué es una de serie de tiempo?</h1>
@@ -195,8 +195,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-14"><a href="index.html#cb1-14" aria-hidden="true" tabindex="-1"></a>TRIM<span class="ot">&lt;-</span><span class="fu">as.xts</span>(<span class="fu">read.zoo</span>(<span class="st">&quot;FINAL_HN.csv&quot;</span>, <span class="at">index.column =</span> <span class="dv">1</span>, <span class="at">sep =</span> <span class="st">&quot;;&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">format =</span> <span class="st">&quot;%d/%m/%Y&quot;</span>))</span>
 <span id="cb1-15"><a href="index.html#cb1-15" aria-hidden="true" tabindex="-1"></a>MES<span class="ot">&lt;-</span><span class="fu">as.xts</span>(<span class="fu">read.zoo</span>(<span class="st">&quot;MES_HN.csv&quot;</span>, <span class="at">index.column =</span> <span class="dv">1</span>, <span class="at">sep =</span> <span class="st">&quot;;&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">format =</span> <span class="st">&quot;%d/%m/%Y&quot;</span>))</span>
 <span id="cb1-16"><a href="index.html#cb1-16" aria-hidden="true" tabindex="-1"></a>IMAE<span class="ot">&lt;-</span>MES<span class="sc">$</span>IMAE</span>
-<span id="cb1-17"><a href="index.html#cb1-17" aria-hidden="true" tabindex="-1"></a>P<span class="ot">&lt;-</span>ggplot2<span class="sc">::</span><span class="fu">autoplot</span>(<span class="fu">log</span>(IMAE))<span class="sc">+</span><span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>)<span class="sc">+</span></span>
-<span id="cb1-18"><a href="index.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">&quot;LOGARITMO DEL IMAE EN HONDURAS&quot;</span>)</span></code></pre></div>
+<span id="cb1-17"><a href="index.html#cb1-17" aria-hidden="true" tabindex="-1"></a>IMAE<span class="ot">&lt;-</span>IMAE[<span class="st">&quot;2001-01-01/&quot;</span>]</span>
+<span id="cb1-18"><a href="index.html#cb1-18" aria-hidden="true" tabindex="-1"></a>P<span class="ot">&lt;-</span>ggplot2<span class="sc">::</span><span class="fu">autoplot</span>(<span class="fu">log</span>(IMAE))<span class="sc">+</span><span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>)<span class="sc">+</span></span>
+<span id="cb1-19"><a href="index.html#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">&quot;LOGARITMO DEL IMAE EN HONDURAS&quot;</span>)</span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a>P</span></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <div id="serie-ruido-blanco-wn" class="section level2" number="1.1">
