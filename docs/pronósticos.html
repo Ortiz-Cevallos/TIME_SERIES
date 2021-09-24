@@ -24,7 +24,7 @@
 <meta name="author" content="LUIS ORTIZ-CEVALLOS" />
 
 
-<meta name="date" content="2021-09-21" />
+<meta name="date" content="2021-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="ejercicio-fuera-de-muestra-ipc-de-honduras.html"/>
+<link rel="next" href="ejercicio-fuera-de-muestra.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -150,9 +150,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2" data-path="pronósticos.html"><a href="pronósticos.html#modelos-para-hacer-pronósticos-del-pib-de-honduras"><i class="fa fa-check"></i><b>2.2</b> Modelos para hacer pronósticos del PIB de Honduras</a></li>
 <li class="chapter" data-level="2.3" data-path="pronósticos.html"><a href="pronósticos.html#simulación-de-shock-en-el-pib-de-usa"><i class="fa fa-check"></i><b>2.3</b> Simulación de shock en el PIB de USA</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ejercicio-fuera-de-muestra-ipc-de-honduras.html"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html"><i class="fa fa-check"></i><b>3</b> Ejercicio fuera de muestra ipc de Honduras</a>
+<li class="chapter" data-level="3" data-path="ejercicio-fuera-de-muestra.html"><a href="ejercicio-fuera-de-muestra.html"><i class="fa fa-check"></i><b>3</b> Ejercicio fuera de muestra</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="ejercicio-fuera-de-muestra-ipc-de-honduras.html"><a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html#ipc-de-honduras"><i class="fa fa-check"></i><b>3.1</b> Ipc de Honduras</a></li>
+<li class="chapter" data-level="3.1" data-path="ejercicio-fuera-de-muestra.html"><a href="ejercicio-fuera-de-muestra.html#aplicación-sobre-la-inflación-de-honduras"><i class="fa fa-check"></i><b>3.1</b> Aplicación sobre la inflación de Honduras</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -366,6 +366,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb41-3"><a href="pronósticos.html#cb41-3" aria-hidden="true" tabindex="-1"></a>REG_HN_S<span class="ot">&lt;-</span> <span class="fu">merge</span>(REG_HN_S, i_HN_N, <span class="at">join=</span><span class="st">&quot;left&quot;</span>)</span>
 <span id="cb41-4"><a href="pronósticos.html#cb41-4" aria-hidden="true" tabindex="-1"></a>Y_S<span class="ot">&lt;-</span>      <span class="fu">sarima.for</span>(Y,<span class="dv">16</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">4</span>, <span class="at">xreg=</span>REG_HN, <span class="at">newxreg=</span>REG_HN_S) </span></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+
 </div>
 </div>
             </section>
@@ -374,7 +375,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ejercicio-fuera-de-muestra-ipc-de-honduras.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ejercicio-fuera-de-muestra.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -425,6 +426,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

@@ -2,6 +2,6 @@ book_filename: "bookdown-start"
 chapter_name: "Capítulo "
 repo: https://ortiz-cevallos.github.io/TIME_SERIES/bookdown-start
 output_dir: docs
-rmd_files: ["index.Rmd", "06-references.Rmd"]
+rmd_files: ["index.Rmd", "03_EJERCICIOS.Rmd", "06-references.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes

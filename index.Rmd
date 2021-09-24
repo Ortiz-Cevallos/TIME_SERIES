@@ -276,30 +276,3 @@ REG_HN_S<- merge(REG_HN_S, i_HN_N, join="left")
 Y_S<-      sarima.for(Y,16,2,0,0,1,0,0,4, xreg=REG_HN, newxreg=REG_HN_S) 
 ```
 
-# Ejercicio fuera de muestra ipc de Honduras 
-
-## Ipc de Honduras
-```{r}
-IPC<-MES$IPC
-FECHA            <-index(MES)
-t_inicial        <-first(FECHA,'1 month')
-index_final      <- last(index(FECHA))
-fecha_contador   <-seq(as.Date(t_inicial), length =index_final, by = "months")
-counter          <-c(1:index_final)  
-contador         <-xts(x=counter, order.by = fecha_contador)
-inicio_estimacion<-coredata(contador["1996-01-01"])[1]
-final_estimacion <-coredata(contador["2006-12-01"])[1]
-H                <-3
-dates_F          <- seq(as.Date(FECHA[inicio_estimacion]), length =final_estimacion-inicio_estimacion+H, by = "months")
-assign(paste('IPC_', H, sep=''), xts(x=window(log(MES$IPC), start=FECHA[inicio_estimacion], end=FECHA[final_estimacion+H-1]), order.by = dates_F))
-
-for(i in 1:10){
-Y                <-window(log(MES$IPC), start=FECHA[inicio_estimacion], end=FECHA[final_estimacion-1+i])
-Y_F              <-sarima.for(Y,H,3,0,11,0,1,0,12, xreg=NULL, newxreg=NULL) 
-dates_out        <-seq(as.Date(FECHA[final_estimacion+i]), length =H, by = "months")
-Y_F_P            <-xts(x=Y_F$pred, order.by = dates_out)
-assign(paste('IPC_', H, sep=''),rbind(get(paste('IPC_', H, sep='')), Y_F_P[H]) )
-}
-compara          <-merge(log(MES$IPC),get(paste('IPC_', H, sep='')),join='right',fill=0) 
-compara 
-```
